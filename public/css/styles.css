@@ -1,0 +1,36 @@
+.e_header {
+    background-color: #259d6d;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.navbar-default {
+    background-color: #428bca;
+    border: none;
+}
+.leftbar {
+    align-content: center;
+}
+
+.leftbar img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    padding-top: 5px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    clear: both;
+}
+
+.dr_title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
