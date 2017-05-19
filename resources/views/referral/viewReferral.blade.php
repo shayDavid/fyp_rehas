@@ -35,6 +35,7 @@
                                     <td>Palestina</td>
                                     <td>date</td>
                                     <td>accepted</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
@@ -101,27 +102,6 @@
             </div>
         </div>
     </div>
-    {{--The script below has to be include in view controller
-            The script compares string and filter according to the perfect match
-    --}}
- {{--   <script>
-        var input, filter, table, tr, td, i;
-        input = document.getElementById('mySearch');
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = document.getElementsByTagName("tr");
-        for(i=0; i < tr.length; i++){
-            td = tr[i].getElementsByTagName("td")[0];
-            if(td){
-                if(td.innerHTML.toUpperCase().indexOf(filter) < -1){
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-
-        }
-    </script>--}}
     <br>
     <br>
 @endsection

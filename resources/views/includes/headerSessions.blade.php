@@ -9,7 +9,8 @@
     <div>
         <form class="well form-horizontal">
             <fieldset style="align-content: center">
-                <legend><h1 style="text-align: center;">Today</h1></legend>
+                <legend><h1 style="text-align: center;"class="small text-letterspacing">Today</h1></legend>
+
             </fieldset>
         </form>
     </div>
