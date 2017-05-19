@@ -9,19 +9,19 @@
                 <div class="col-md-9">
                     {{--@include('includes.headerSessions')--}}
                     <section class=" leftbar col-md-3">
-                        <img  src="{{URL::to('images/noavatar.jpg')}}" align="middle">
+                        <img  src="{{URL::to('images/noavatar.jpg')}}" class="img-circle" align="middle">
                         <div class="dr_title  panel panel-success">
                             <h3>Admin</h3>
                             <h3>admin</h3>
                         </div>
-                        {{--side bar links --}}
+                        {{--side bar links--}}
                         <ul class="leftbar  nav nav-pills nav-stacked">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="register">Hospital</a></li>
-                            <li><a href="hospital" >view</a></li>
-                            <li><a href="#Update">update</a></li>
-                            <li><a href="#support">Support</a></li>
-                            <li><a href="#about">About Us</a></li>
+                            <li class="active"><a href="#home">Home</a></li><br/>
+                            <li><a href="register">Hospital</a></li><br/>
+                            <li><a href="hospital" >view</a></li><br/>
+                            <li><a href="#Update">update</a></li><br/>
+                            {{--<li><a href="#support">Support</a></li><br/>
+                            <li><a href="#about">About Us</a></li><br/>--}}
                         </ul>
                     </section>
                 </div>

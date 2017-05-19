@@ -1,13 +1,15 @@
+/*
 
-body {
-    background: #259d6d;
-}
-/* Profile container */
+!*body {
+    !*background: #259d6d;*!
+    min-height: 100%;
+}*!
+!* Profile container *!
 .profile {
     margin: 20px 0;
 }
 
-/* Profile sidebar */
+!* Profile sidebar *!
 .profile-sidebar {
     padding: 20px 0 10px 0;
     background: #259d6d;
@@ -103,25 +105,25 @@ body {
     background-color: #fff;
 }
 
-/* enable absolute positioning */
+!* enable absolute positioning *!
 .inner-addon {
     position: relative;
 }
 
-/* style icon */
+!* style icon *!
 .inner-addon .glyphicon {
     position: absolute;
     padding: 10px;
     pointer-events: none;
 }
 
-/* align icon */
+!* align icon *!
 .right-addon .glyphicon { right: 0px;}
 
-/* add padding  */
+!* add padding  *!
 .right-addon input { padding-right: 30px; }
 
-/* Profile Content */
+!* Profile Content *!
 .profile-content {
     padding: 20px;
     background: #fff;
@@ -158,16 +160,20 @@ body {
 input[type=text]:focus {
     width: 100%;
 }
-/* footer content */
+!* footer content *!
 #footer {
-    height: 50px;
-    width:100%;
+
+    !*width:100%;*!
     font-size: medium;
     text-align: center;
     clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
 }
 .col-md-5{
     margin-left: 0;
     padding: 0;
     margin-top: 70px;
-}
+}*/
