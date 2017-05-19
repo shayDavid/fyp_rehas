@@ -16,7 +16,10 @@ class CreateReferralsTable extends Migration
             $table->string('rid');
             $table->text('diagnosis');
             $table->date('issuedate');
+            $table->text('treatmentGiven');
+            $table->text('treatmentRecommended');
             $table->string('referralreason');
+            $table->text('investigation');
             $table->string('source');
             $table->string('destination');
             $table->string('status');

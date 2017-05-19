@@ -26,6 +26,16 @@
                         </div>
 
                         <div class="form-group">
+                            <label class="col-md-3 control-label" for="date">Issue date</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input name="date" placeholder="date" class="form-control"  type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <label class="col-md-3 control-label" for="treatment_given">Treatment Given</label>
                             <div class="col-md-6">
                                 <div class="input-group">
@@ -64,18 +74,26 @@
                                 </div>
                             </div>
                         </div>
-
+                            {{--uploading input field, table is not included in the database --}}
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="fileUploading">Upload file</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="file" name="fileUploading">
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="form-group" style="text-align: center; ">
                             Type of Referral ( Put an  in the appropriate box)
                             <div class="radio">
-                                <label><input type="radio" name="referralType">Need immediate referral</label>
+                                <label><input type="radio"  class="offset-left" name="referralType">Need immediate referral</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="referralType">Referral within a month</label>
+                                <label><input type="radio" class="offset-left" name="referralType">Referral within a month</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="referralType">Not urgent (tick one)</label>
+                                <label><input type="radio" class="offset-left" name="referralType">Not urgent (tick one)</label>
                             </div>
                         </div>
 
@@ -87,21 +105,18 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Send referral</h4>
+                                        <h4 class="modal-title">Destination</h4>
                                     </div>
 
                                     <div class="modal-body">
                                         <form class="form-horizontal" method="post" action="">
                                             <div class="form-group">
-                                                <label class=" col-md-3 control-label">Select Hospital:</label>
+                                                <label class=" col-md-3 control-label">Destination:</label>
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <select class="form-control" id="referralHospitals">
-                                                            <option>choose hospital</option>
+                                                            <option>Select Hospital</option>
                                                             <option>Muhimbili National Hospital</option>
-                                                            <option>Bugando</option>
-                                                            <option>KCMC</option>
-                                                            <option>Mbeya Regional Hospital</option>
                                                             <option>Mwananyamala Hospital</option>
                                                         </select>
                                                     </div>
