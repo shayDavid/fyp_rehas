@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-    <div class="content container-fluid">
+    <div class="container">
         <div class="row {{--profile--}}">
             @include('includes.headerSessions')
             <div class="col-md-9">
