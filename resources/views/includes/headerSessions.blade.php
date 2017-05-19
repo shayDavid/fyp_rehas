@@ -1,5 +1,7 @@
 
+<style>
 
+</style>
 <section class="leftbar col-md-3">
     {{--<img  src="{{URL::to('images/noavatar.jpg')}}">
     <div class="dr_title  panel panel-success">
@@ -17,11 +19,11 @@
     <div>
         {{--side bar links--}}
         <ul class="nav nav-pills nav-stacked">
-            <li><a class="small text-uppercase text-letterspacing" href="/">Home</a></li><br/>
-            <li><a class="small text-uppercase text-letterspacing" href="referral">eReferrals</a></li><br/>
-            <li><a class="small text-uppercase text-letterspacing" href="view" >View referrals</a><br/>
-            <li><a class="small text-uppercase text-letterspacing" href="admin">Admin</a></li><br/>
-            <li><a class="small text-uppercase text-letterspacing" href="#about">About Us</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="/">Home</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="referral">eReferrals</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="view" >View referrals</a><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="admin">Admin</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="#about">About Us</a></li><br/>
         </ul>
     </div>
 

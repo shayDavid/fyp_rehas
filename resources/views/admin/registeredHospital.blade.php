@@ -3,6 +3,7 @@
 <div class="content container">
     <div class="row">
         <div class="col-md-9">
+            <br/>
             <form class="well form-horizontal">
                 <fieldset>
                     <legend><h2 style="text-align: center;">Registered Hospitals</h2></legend>

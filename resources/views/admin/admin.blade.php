@@ -16,12 +16,12 @@
                         </div>
                         {{--side bar links--}}
                         <ul class="leftbar  nav nav-pills nav-stacked">
-                            <li class="active"><a href="#home">Home</a></li><br/>
-                            <li><a href="register">Hospital</a></li><br/>
-                            <li><a href="hospital" >view</a></li><br/>
-                            <li><a href="#Update">update</a></li><br/>
-                            {{--<li><a href="#support">Support</a></li><br/>
-                            <li><a href="#about">About Us</a></li><br/>--}}
+                            <li><a href="#home" style="color: #ffffff;">Home</a></li><br/>
+                            <li><a href="register" style="color: #ffffff;">Hospital</a></li><br/>
+                            <li><a href="hospital" style="color: #ffffff;">view</a></li><br/>
+                            <li><a href="#Update"  style="color: #ffffff;">update</a></li><br/>
+                            {{--<li><a href="#support" style="color: #ffffff;">Support</a></li><br/>
+                            <li><a href="#about" style="color: #ffffff;">About Us</a></li><br/>--}}
                         </ul>
                     </section>
                 </div>
