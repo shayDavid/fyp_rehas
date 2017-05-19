@@ -11,6 +11,7 @@ class Referral extends Model
     //change of primary key
     protected $table = 'referrals';
     protected $primaryKey = 'rid';
+    protected $fillable = ['rid', 'diagnosis', 'issuedate', 'referralreason', 'source', 'destination', 'status'];
     public $incrementing = false;
 
     public function doctor() {

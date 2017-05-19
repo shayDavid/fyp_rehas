@@ -40,6 +40,6 @@ Route::group(['middleware' => ['web']] , function(){
 });
 
 
-Route::get('/api/referrals', 'ReferralCtrl@index');
-Route::get('/api/referrals/{rid}', 'ReferralCtrl@show');
+Route::get('/api/referrals/{rid?}', 'ReferralCtrl@index');
 Route::post('/api/create_referral', 'ReferralCtrl@store');
+Route::delete('/api/delete_referral/{rid}', 'ReferralCtrl@destroy');

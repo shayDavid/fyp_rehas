@@ -4,18 +4,24 @@ namespace App\Http\Controllers;
 
 use App\Referral;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 
 class ReferralCtrl extends Controller
 {
     /**
      * Display a listing of the resource.
      *
+     * @param null $rid
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($rid = null)
     {
-        return Referral::all();
+        if($rid == null) {
+            $referrals = Referral::all();
+            return response()->json($referrals);
+        } else {
+            $referral = Referral::findOrFail($rid);
+            return response()->json($referral);
+        }
 
     }
 
@@ -31,27 +37,12 @@ class ReferralCtrl extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
      */
-    public function store() {
-        $input = Input::json();
-        $referral = new Referral();
-        $referral->rid = $input->get('rid');
-        $referral->diagnosis = $input->get('diagnosis');
-        $referral->issuedate = $input->get('issuedate');
-        $referral->referralreason = $input->get('referralreason');
-        $referral->source = $input->get('source');
-        $referral->destination = $input->get('destination');
-        $referral->status = $input->get('status');
-        $referral->save();
+    public function store(Request $request) {
+        Referral::create($request->all());
         return response('Created', 201);
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show($rid)
-    {
-        return Referral::findOrFail($rid);
     }
 
     /**
@@ -80,11 +71,12 @@ class ReferralCtrl extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int  $rid
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($rid)
     {
-        //
+        Referral::destroy($rid);
+        return response('Deleted', 200);
     }
 }
