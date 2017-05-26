@@ -9,7 +9,7 @@
     <div class="content container">
         <div class="row">
             @include('includes.headerSessions')
-            <div class="col-md-9">
+            <div  id="top" class="col-md-9">
                 <form id="referral_form" class="well form-horizontal" method="post" action="">
                     <fieldset style="align-content: center">
                         {{-- Form Name--}}
@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group" >
+                        {{--<div class="form-group" >
                             <div>
                                 <label class="col-md-offset-3 control-label">Type of Referral ( Put an  in the appropriate box)</label>
                             </div>
@@ -99,8 +99,8 @@
                                 <label class="col-md-offset-3 control-label"><input type="radio" class="small text-letterspacing" name="referralType">Not urgent (tick one)</label>
                             </div>
                         </div>
-
-                        <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#sendData">submit</button>
+--}}
+                        <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#sendData">continue</button>
                         {{--Modal--}}
                         <div class="modal fade" id="sendData" role="dialog">
                             <div class="modal-dialog">

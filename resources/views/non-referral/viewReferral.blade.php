@@ -9,8 +9,7 @@
     <div class="container">
         <div class="row {{--profile--}}">
             @include('includes.headerSessions')
-            <div class="col-md-9">
-                <br/>
+            <div id="top" class="col-md-9">
                     {{-- View attributes of the referral status and available referals here--}}
                 <form class="well form-horizontal">
                     <fieldset>

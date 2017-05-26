@@ -18,11 +18,11 @@ Route::group(['middleware' => ['web']] , function(){
     });
 
     Route::get('view', function (){
-        return view('referral.viewReferral');
+        return view('non-referral.viewReferral');
     });
 
     Route::get('referral', function (){
-        return view('referral.referralForm');
+        return view('non-referral.referralForm');
     });
 
 

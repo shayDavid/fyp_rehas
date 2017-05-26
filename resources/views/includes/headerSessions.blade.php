@@ -1,18 +1,12 @@
 
-<style>
-
-</style>
 <section class="leftbar col-md-3">
-    {{--<img  src="{{URL::to('images/noavatar.jpg')}}">
-    <div class="dr_title  panel panel-success">
-        <h3>Dr. FYP</h3>
-        <h3>Title</h3>
-    </div>--}}
     <div>
         <form class="well form-horizontal">
             <fieldset style="align-content: center">
-                <legend><h1 style="text-align: center;"class="small text-letterspacing">Today</h1></legend>
+                <legend><h1 style="text-align: center;"class="small text-letterspacing">current date</h1></legend>
+                <div>
 
+                </div>
             </fieldset>
         </form>
     </div>

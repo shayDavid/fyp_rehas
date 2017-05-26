@@ -7,10 +7,10 @@
     <title>@yield('title')</title>
 
     {{-- Bootstrap core css --}}
+    <link rel="stylesheet" type="text/css" href="{{URL::to('node_modules/bootstrap-ui/bower_components/dist/css/bootstrap-ui.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/bootstrap.css')}}">
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{URL::to('node_modules/bootstrap-ui/bower_components/dist/css/bootstrap-ui.min.css')}}">
     <link rel="icon" href="{{URL::to('images/favicon.ico')}}">
     {{-- custome css --}}
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/main.css') }}">
