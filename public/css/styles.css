@@ -91,14 +91,42 @@ body {
 .icon-size {
     font-size: 87px;
 }
-.dr_title {
-    text-align: center;
-    margin-top: 20px;
+
+.huge {
+    font-size: 40px;
+}
+.panel-green {
+    border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: white;
+    background-color: #5cb85c;
+}
+.panel-green > a {
+    color: #5cb85c;
+}
+.panel-green > a:hover {
+    color: #3d8b3d;
 }
 
-.whiteColor {
-    color: #FFFFFF;
+.panel-yellow {
+    border-color: #2b91a1;
 }
+.panel-yellow > .panel-heading {
+    border-color: #2b91a1;
+    color: white;
+    background-color: #2b91a1;
+}
+.panel-yellow > a {
+    color: #2b91a1;
+}
+.panel-yellow > a:hover {
+    color: #36A172;
+}
+/*  background-color: #f0ad4e;
+    color: #df8a13;
+*/
 footer {
     padding: 1em;
     color: #FFFFFF;
