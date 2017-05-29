@@ -13,11 +13,11 @@
     <div>
         {{--side bar links--}}
         <ul class="nav nav-pills nav-stacked">
-            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="/">Home</a></li><br/>
-            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="referral">eReferrals</a></li><br/>
-            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="view" >View referrals</a><br/>
-            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="admin">Admin</a></li><br/>
-            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="#about">About Us</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="/"><i class="fa fa-home fa-fw"></i>Home</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="referral"><i class="fa fa-home fa-fw"></i>eReferrals</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="view" ><i class="fa fa-home fa-fw"></i>View referrals</a><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="admin"><i class="fa fa-home fa-fw"></i>Admin</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="#about"><i class="fa fa-home fa-fw"></i>About Us</a></li><br/>
         </ul>
     </div>
 

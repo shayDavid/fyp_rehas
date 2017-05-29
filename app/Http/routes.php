@@ -33,7 +33,7 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('register', function (){
         return view('admin.registration');
     });
-
+    
     /*Route::get('hospital', function (){
         return view('admin.registeredHospital');
     });*/

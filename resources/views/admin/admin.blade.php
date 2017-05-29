@@ -1,3 +1,4 @@
+<?php
 @extends('layouts.master')
 @section('title')
     ReHAS
@@ -29,7 +30,7 @@
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-hospital-o fa-4x"></i>
+                                            <i class="fa fa-hospital-o fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">26</div>
@@ -98,6 +99,8 @@
                         <!--/end of doctor's list-->
                     </div>
                 </div>
+
+                <div id="perfect_charts" class="col-lg-4"></div>
             </div>
         </div>
 @endsection
