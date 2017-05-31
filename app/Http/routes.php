@@ -34,9 +34,14 @@ Route::group(['middleware' => ['web']] , function(){
         return view('admin.registration');
     });
     
-    /*Route::get('hospital', function (){
+    Route::get('hospital', function (){
         return view('admin.registeredHospital');
-    });*/
+    });
+
+    Route::get('dashboard', function (){
+        return view('referral.dashboard');
+    });
+
 });
 
 

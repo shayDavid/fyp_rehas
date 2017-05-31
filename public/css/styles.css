@@ -91,6 +91,14 @@ body {
 .icon-size {
     font-size: 87px;
 }
+/*
+.leftbar .nav-second-level li,
+.leftbar .nav-third-level li {
+    border-bottom: none !important;
+}
+.leftbar .nav-second-level li a {
+    padding-left: 37px;
+}*/
 
 .huge {
     font-size: 40px;

@@ -1,4 +1,4 @@
-<?php
+
 @extends('layouts.master')
 @section('title')
     ReHAS
@@ -14,8 +14,22 @@
                         <li><a href="register" style="color: #ffffff;"><i class="fa fa-hospital-o fa-fw"></i>Hospital</a></li><br/>
                         <li><a href="#registeredHospital" style="color: #ffffff;"><i class="fa fa-stethoscope fa-fw"></i>Doctor</a></li><br/>
                         <li><a href="#Update"  style="color: #ffffff;"><i class="fa fa-users fa-fw"></i>Patients</a></li><br/>
+
                         <li><a href="#report" style="color: #ffffff;"><i class="fa fa-file-archive-o fa-fw"></i>Reports</a></li><br/>
+                       {{-- <li>
+                            <a href="#" style="color: #ffffff;"><i class="fa fa-sitemap fa-fw"></i>Report and Charts<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#Charts" style="color: #ffffff;"><i class="fa fa-line-chart fa-fw"></i>Charts</a>
+                                </li>
+
+                                <li>
+                                    <a href="#report" style="color: #ffffff;"><i class="fa fa-file-archive-o fa-fw"></i>Reports</a>
+                                </li>
+                            </ul>
+                        </li><br/>--}}
                         <li><a href="#support" style="color: #ffffff;"><i class="fa fa-gear fa-fw"></i>Settings</a></li><br/>
+
                     </ul>
                 </div>
                 <div class="col-md-9" id="top">
