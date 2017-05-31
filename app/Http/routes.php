@@ -42,6 +42,10 @@ Route::group(['middleware' => ['web']] , function(){
         return view('referral.dashboard');
     });
 
+    Route::get('received', function (){
+        return view('referral.receivedReferrals');
+    });
+
 });
 
 

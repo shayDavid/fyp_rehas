@@ -6,31 +6,32 @@
 
 @section('content')
     <div class="container">
-        <div class="row {{--profile--}}">
-            @include('includes.headerSessions')
+        <div class="row">
+            {{--@include('includes.headerSessions')--}}
+            <div class="leftbar col-md-3">
+                <ul class="leftbar nav nav-pills nav-stacked" role="menubar">
+                    @include('includes.sidebar')
+                </ul>
+            </div>
             <div id="top" class="col-md-9">
                 {{-- View attributes of the referral status and available referals here--}}
                 <form class="well form-horizontal">
                     <fieldset>
                         <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
-                        <div class="nav navbar-collapse" id="searchMenu">
-                            <ul>
-                                <li class="sidebar-search">
-                                    <div class="input-group custom-search-form">
-                                        <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                                    </div>
-                                    <!-- /input-group -->
-                                </li>
-                            </ul>
+                        <div class="nav navbar-collapse">
+                            <form class="form-horizontal">
+                                <div class="input-group">
+                                    <input id="searchMenu" type="text" class="form-control" placeholder="search...">
+                                    <span class="input-group-btn"><button class="btn btn-primary" type="button">
+                                            <i class="fa fa-search"></i></button></span>
+                                </div>
+                            </form>
                         </div>
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
-                            <table {{--id="myTable"--}} class="table table-hover usr_responsive">
+                            <table {{--id="myTable"--}} class="table table-hover table-responsive"
+                            summary="this table display data received from non-referral hospitals,
+                            Referral hospital can decide whether to accept or deny referral letter">
                                 <thead>
                                 <tr>
                                     <th>#</th>

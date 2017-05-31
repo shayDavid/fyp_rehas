@@ -14,24 +14,20 @@
                 <form class="well form-horizontal">
                     <fieldset>
                         <legend><h2 style="text-align: center;">View Referrals</h2></legend>
-                        <div class="nav navbar-collapse" id="searchMenu">
-                            <ul>
-                                <li class="sidebar-search">
-                                    <div class="input-group custom-search-form">
-                                        <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                                    </div>
-                                    <!-- /input-group -->
-                                </li>
-                            </ul>
+                        <div class="nav navbar-collapse">
+                            <form class="form-horizontal">
+                                <div class="input-group">
+                                    <input id="searchMenu" type="text" class="form-control" placeholder="search...">
+                                    <span class="input-group-btn"><button class="btn btn-primary" type="button">
+                                            <i class="fa fa-search"></i></button></span>
+                                </div>
+                            </form>
                         </div>
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
-                            <table {{--id="myTable"--}} class="table table-hover usr_responsive">
+                            <table {{--id="myTable"--}} class="table table-responsive table-hover"
+                            summary="This table shows already processed referral letters from non-referral hospital">
+                                <caption class="text-center"></caption>
                                 <thead>
                                 <tr>
                                     <th>#</th>

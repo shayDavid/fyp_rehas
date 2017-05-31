@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/font-awesome.min.css')}}">
     <link rel="icon" href="{{URL::to('images/favicon.ico')}}">
     {{-- custome css --}}
-    <link rel="stylesheet" type="text/css" href="{{ URL::to('css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/styles.css')}}">
     @yield('styles')
 </head>

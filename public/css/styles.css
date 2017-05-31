@@ -43,10 +43,6 @@ body {
     background-color: #2b91a1;
 }
 
-#searchMenu .sidebar-search {
-    padding: 15px;
-}
-
 .leftbar {
     padding-top: 12px;
     align-content: center;
@@ -76,6 +72,10 @@ body {
     background-color: #2b91a1;
     text-decoration-color: white;
 }
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #36A172;
+}
 .navbar-login {
     width: 350px;
     padding: 10px;
@@ -91,14 +91,6 @@ body {
 .icon-size {
     font-size: 87px;
 }
-/*
-.leftbar .nav-second-level li,
-.leftbar .nav-third-level li {
-    border-bottom: none !important;
-}
-.leftbar .nav-second-level li a {
-    padding-left: 37px;
-}*/
 
 .huge {
     font-size: 40px;
@@ -132,9 +124,7 @@ body {
 .panel-yellow > a:hover {
     color: #36A172;
 }
-/*  background-color: #f0ad4e;
-    color: #df8a13;
-*/
+
 footer {
     padding: 1em;
     color: #FFFFFF;
@@ -142,8 +132,3 @@ footer {
     clear: both;
     text-align: center;
 }
-
-
-
-
-
