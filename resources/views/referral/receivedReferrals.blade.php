@@ -7,7 +7,6 @@
 @section('content')
     <div class="container">
         <div class="row">
-            {{--@include('includes.headerSessions')--}}
             <div class="leftbar col-md-3">
                 <ul class="leftbar nav nav-pills nav-stacked" role="menubar">
                     @include('includes.sidebar')
@@ -29,7 +28,7 @@
                         </div>
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
-                            <table {{--id="myTable"--}} class="table table-hover table-responsive"
+                            <table id="receivedReferral" class="table table-hover table-responsive"
                             summary="this table display data received from non-referral hospitals,
                             Referral hospital can decide whether to accept or deny referral letter">
                                 <thead>

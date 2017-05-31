@@ -25,7 +25,7 @@
                         </div>
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
-                            <table {{--id="myTable"--}} class="table table-responsive table-hover"
+                            <table id="viewReferral" class="table table-responsive table-hover"
                             summary="This table shows already processed referral letters from non-referral hospital">
                                 <caption class="text-center"></caption>
                                 <thead>
