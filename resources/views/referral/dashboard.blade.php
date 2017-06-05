@@ -2,7 +2,7 @@
 @section('content')
     <div class="container container-fluid">
         <div class="row">
-            <div class=" leftbar col-md-3">
+            <div class=" leftbar col-md-3" id="sidebar">
                 <ul  class="leftbar nav nav-pills nav-stacked">
                     <li><a href="#home" style="color: #ffffff;"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a></li><br/>
                     <li><a href="register" style="color: #ffffff;"><i class="fa fa-hospital-o fa-fw"></i>Hospital</a></li><br/>

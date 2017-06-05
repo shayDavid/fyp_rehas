@@ -13,6 +13,8 @@
 
 Route::group(['middleware' => ['web']] , function(){
 
+    /*Route::controller('/', 'ReferralCtrl@index');*/
+
     Route::get('/', function () {
         return view('index');
     });
@@ -21,8 +23,8 @@ Route::group(['middleware' => ['web']] , function(){
         return view('non-referral.viewReferral');
     });
 
-    Route::get('referral', function (){
-        return view('non-referral.referralForm');
+    Route::get('create', function (){
+        return view('non-referral.createReferral');
     });
 
 

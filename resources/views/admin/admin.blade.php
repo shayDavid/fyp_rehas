@@ -7,7 +7,7 @@
 @section('content')
         <div class=" content container-fluid">
             <div class="row">
-                <div class=" leftbar col-md-3">
+                <div class=" leftbar col-md-3" id="sidebar">
                    <!-- side bar links-->
                     <ul class="leftbar  nav nav-pills nav-stacked">
                         <li><a href="#home" style="color: #ffffff;"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a></li><br/>
@@ -33,7 +33,7 @@
                     </ul>
                 </div>
                 <div class="col-md-9" id="top">
-                        <div class="page-header">
+                    <div class="page-header">
                             <h1 style="font-family: FontAwesome">Admin dashboard</h1>
                         </div>
                     <!-- .row -->
@@ -112,9 +112,8 @@
                         </div>
                         <!--/end of doctor's list-->
                     </div>
+                    <div id="perfect_charts" class="col-lg-4"></div>
                 </div>
-
-                <div id="perfect_charts" class="col-lg-4"></div>
             </div>
         </div>
 @endsection
