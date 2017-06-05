@@ -5,15 +5,6 @@
         <form class="well form-horizontal">
             <fieldset>
                 <legend><h2 style="text-align: center;">View Referrals</h2></legend>
-                <div class="nav navbar-collapse">
-                    <form class="form-horizontal">
-                        <div class="input-group">
-                            <input id="searchMenu" type="text" class="form-control" placeholder="search...">
-                                    <span class="input-group-btn"><button class="btn btn-primary" type="button">
-                                            <i class="fa fa-search"></i></button></span>
-                        </div>
-                    </form>
-                </div>
                 <div>
                     {{-- this table data can be fetched from a controller as an array of data--}}
                     <table id="viewReferral" class="table table-responsive table-hover"
@@ -22,80 +13,25 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Reg#</th>
-                            <th>Patient name</th>
-                            <th>Hospital name</th>
-                            <th>Issuing date</th>
+                            <th>Referral ID</th>
+                            <th>Patient Name</th>
+                            <th>Referral Hospital</th>
+                            <th>Issued Date</th>
                             <th>Status</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>12-001-001</td>
-                            <td>Otto</td>
-                            <td>Palestina</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>12-001-003</td>
-                            <td>Otto</td>
-                            <td>Palestina District Hospital</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>12-001-002</td>
-                            <td>Metemi kischwakubwa</td>
-                            <td>Muhimbili National Hospital</td>
-                            <td>date</td>
-                            <td>Denied</td>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>14-001-001</td>
-                            <td>Otto</td>
-                            <td>Mlimani dispensary</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                        </tr>
-                        {{--sample data should be deleted late--}}
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>14-001-001</td>
-                            <td>Otto</td>
-                            <td>Mlimani dispensary</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>14-001-001</td>
-                            <td>Otto</td>
-                            <td>Mlimani dispensary</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>14-001-001</td>
-                            <td>Otto</td>
-                            <td>Mlimani dispensary</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>14-001-001</td>
-                            <td>Otto</td>
-                            <td>Mlimani dispensary</td>
-                            <td>date</td>
-                            <td>accepted</td>
-                        </tr>
-
+                        @for($i = 0; $i < count($referrals); $i++)
+                            <tr>
+                                <th scope="row">{{ $i + 1 }}</th>
+                                <td>{{ $referrals[$i]->rid }}</td>
+                                <td>{{ $referrals[$i]->diagnosis }}</td>
+                                <td>{{ $referrals[$i]->destination }}</td>
+                                <td>{{ $referrals[$i]->issuedate }}</td>
+                                <td>{{ $referrals[$i]->status }}</td>
+                                <td></td>
+                            </tr>
+                        @endfor
                         </tbody>
                     </table>
                 </div>
