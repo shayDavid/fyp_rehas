@@ -1,7 +1,7 @@
 
 {{--<section class="col-md-9" id="top">--}}
     <div class="col-md-9" id="top">
-        <form id="referral_form" class="well form-horizontal" method="post" action="">
+        <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
             <fieldset style="align-content: center">
                 {{-- Form Name--}}
                 <legend><h2 style="text-align: center;">Create Referral</h2></legend>
