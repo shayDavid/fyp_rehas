@@ -84,14 +84,6 @@
                                         <td>accepted</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">7</th>
-                                        <td>14-001-001</td>
-                                        <td>Otto</td>
-                                        <td>Mlimani dispensary</td>
-                                        <td>date</td>
-                                        <td>accepted</td>
-                                    </tr>
-                                    <tr>
                                         <th scope="row">8</th>
                                         <td>14-001-001</td>
                                         <td>Otto</td>
