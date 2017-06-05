@@ -25,7 +25,6 @@ Route::group(['middleware' => ['web']] , function(){
         return view('actions.referralForm');
     });
 
-
     Route::get('admin', function (){
         return view('actions.admin');
     });
@@ -41,5 +40,8 @@ Route::group(['middleware' => ['web']] , function(){
 
 
 Route::get('/api/referrals/{rid?}', 'ReferralCtrl@index');
-Route::post('/api/create_referral', 'ReferralCtrl@store');
+Route::post('/api/create_referral', [
+    'uses' => 'ReferralCtrl@store',
+    'as' => 'create_referral'
+]);
 Route::delete('/api/delete_referral/{rid}', 'ReferralCtrl@destroy');
