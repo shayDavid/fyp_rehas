@@ -11,7 +11,7 @@
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                            <input name="diagnosis" placeholder="diagnosis" class="form-control"  type="text">
+                            <input name="diagnosis" placeholder="diagnosis" class="form-control"  type="text" required>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                            <input name="date" placeholder="date" class="form-control"  type="date">
+                            <input name="date" placeholder="date" class="form-control"  type="date" required>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
-                            <input name="treatment_given" placeholder="treatment given" class="form-control"  type="text">
+                            <input name="treatment_given" placeholder="treatment given" class="form-control"  type="text" required>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
-                            <input name="treatment_recommended" placeholder="treatment recommended" class="form-control"  type="text">
+                            <input name="treatment_recommended" placeholder="treatment recommended" class="form-control"  type="text" required>
                         </div>
                     </div>
                 </div>
@@ -50,9 +50,7 @@
                     <label class="col-md-3 control-label" for="reason">Reason</label>
                     <div class="col-md-6">
                         <div class="input-group">
-                            {{--<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>--}}
-                            <textarea name="reason" class="form-control" rows="3" cols="50" placeholder="reason for referral"></textarea>
-                            {{--<input name="treatment_given" placeholder="treatment given" class="form-control"  type="text">--}}
+                            <textarea name="reason" class="form-control" rows="3" cols="50" placeholder="reason for referral" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -61,7 +59,7 @@
                     <label class="col-md-3 control-label" for="investigation">Investigation</label>
                     <div class="col-md-6">
                         <div class="input-group">
-                            <textarea name="investigation" class="form-control" rows="4" cols="50" placeholder="investigation to be done"></textarea>
+                            <textarea name="investigation" class="form-control" rows="4" cols="50" placeholder="investigation to be done" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -79,7 +77,7 @@
                     <label class=" col-md-3 control-label">Destination:</label>
                     <div class="col-md-6">
                         <div class="input-group">
-                            <select name="destination" class="form-control" id="referralHospitals">
+                            <select name="destination" class="form-control" id="referralHospitals" required>
                                 <option value="muhimbili">Muhimbili</option>
                                 <option value="mwananyamala">Mwananyamala</option>
                             </select>
