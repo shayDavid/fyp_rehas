@@ -19,7 +19,7 @@
 </head>
 <body>
     @include('includes.header')
-    <div class="container-fluid">@yield('content')</div>
+    <div>@yield('content')</div>
     @include('includes.footer')
 </body>
 </html>

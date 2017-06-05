@@ -75,57 +75,19 @@
                     </div>
                 </div>
 
-                {{--<div class="form-group" >
-                    <div>
-                        <label class="col-md-offset-3 control-label">Type of Referral ( Put an  in the appropriate box)</label>
-                    </div>
-
-                    <div class="radio">
-                        <label class="col-md-offset-3 control-label"><input type="radio"  class="small text-letterspacing" name="referralType">Need immediate referral</label>
-                    </div>
-                    <div class="radio">
-                        <label class="col-md-offset-3 control-label"><input type="radio" class="small text-letterspacing" name="referralType">Referral within a month</label>
-                    </div>
-                    <div class="radio">
-                        <label class="col-md-offset-3 control-label"><input type="radio" class="small text-letterspacing" name="referralType">Not urgent (tick one)</label>
-                    </div>
-                </div>
---}}
-                <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#sendData">continue</button>
-                {{--Modal--}}
-                <div class="modal fade" id="sendData" role="dialog">
-                    <div class="modal-dialog">
-                        {{--Modal content here--}}
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Destination</h4>
-                            </div>
-
-                            <div class="modal-body">
-                                <form class="form-horizontal" method="post" action="">
-                                    <div class="form-group">
-                                        <label class=" col-md-3 control-label">Destination:</label>
-                                        <div class="col-md-9">
-                                            <div class="input-group">
-                                                <select class="form-control" id="referralHospitals">
-                                                    <option>Select Hospital</option>
-                                                    <option>Muhimbili National Hospital</option>
-                                                    <option>Mwananyamala Hospital</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary" data-submit="modal">Send</button>
-                            </div>
+                <div class="form-group">
+                    <label class=" col-md-3 control-label">Destination:</label>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <select name="destination" class="form-control" id="referralHospitals">
+                                <option value="muhimbili">Muhimbili</option>
+                                <option value="mwananyamala">Mwananyamala</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-
+                <button type="submit" class="btn btn-primary center-block" data-submit="modal">Send</button>
+                <input type="hidden" name="_token" value="{{Session::token()}}">
             </fieldset>
         </form>
     </div>

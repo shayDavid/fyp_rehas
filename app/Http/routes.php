@@ -16,7 +16,7 @@ Route::group(['middleware' => ['web']] , function(){
     /*Route::controller('/', 'ReferralCtrl@index');*/
 
     Route::get('/', function () {
-        return view('index');
+        return view('non-referral.index');
     });
 
     Route::get('view', function (){

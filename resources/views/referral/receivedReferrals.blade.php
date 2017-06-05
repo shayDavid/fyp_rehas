@@ -15,6 +15,7 @@
             <div id="top" class="col-md-9">
                 {{-- View attributes of the referral status and available referals here--}}
                 <form class="well form-horizontal">
+                    {{ csrf_field() }}
                     <fieldset>
                         <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
                         <div class="nav navbar-collapse">
