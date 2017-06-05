@@ -16,6 +16,18 @@
 
             {{--navbar header--}}
             <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <form class="navbar-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fa fa-fw fa-search"></i>
+                            </button>
+                        </span>
+                        </div>
+                    </form>
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #FFFFFF;">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
