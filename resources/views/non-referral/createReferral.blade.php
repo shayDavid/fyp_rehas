@@ -1,5 +1,5 @@
 
-{{--<section class="col-md-9" id="top">--}}
+
     <div class="col-md-9" id="top">
         <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
             <fieldset style="align-content: center">
@@ -89,5 +89,4 @@
             </fieldset>
         </form>
     </div>
-{{--
-</section>--}}
+
