@@ -2,6 +2,7 @@
 {{--<section class="col-md-9" id="top">--}}
     <div class="col-md-9" id="top">
         <form id="referral_form" class="well form-horizontal" method="post" action="">
+            {{ csrf_field() }}
             <fieldset style="align-content: center">
                 {{-- Form Name--}}
                 <legend><h2 style="text-align: center;">Create Referral</h2></legend>
@@ -121,6 +122,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary" data-submit="modal">Send</button>
+                                <input type="hidden" name="_token" value="{{Session::token()}}">
                             </div>
                         </div>
                     </div>

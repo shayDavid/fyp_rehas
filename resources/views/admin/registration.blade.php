@@ -10,6 +10,7 @@
             </div>
             <div class="col-md-9" id="top">
                 <form class="well form-horizontal" action="" method="post" id="registration_form">
+                    {{ csrf_field() }}
                     <fieldset>
                         {{-- Form Name--}}
                         <legend><h2 style="text-align: center">Hospital Registration</h2></legend>
@@ -112,6 +113,7 @@
                             <label class="col-md-4 control-label" for="submit"></label>
                             <div class="col-md-4">
                                 <button id="btnSubmit" type="submit" class="btn btn-primary" >Send <span class="glyphicon glyphicon-send"></span></button>
+                                <input type="hidden" name="_token" value="{{Session::token()}}">
                             </div>
                         </div>
                     </fieldset>
