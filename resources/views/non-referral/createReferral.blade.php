@@ -1,8 +1,7 @@
 
 {{--<section class="col-md-9" id="top">--}}
     <div class="col-md-9" id="top">
-        <form id="referral_form" class="well form-horizontal" method="post" action="">
-            {{ csrf_field() }}
+        <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
             <fieldset style="align-content: center">
                 {{-- Form Name--}}
                 <legend><h2 style="text-align: center;">Create Referral</h2></legend>
@@ -87,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary center-block" data-submit="modal">Send</button>
+                <button type="submit" class="btn btn-primary center-block" data-submit="modal">Refer</button>
                 <input type="hidden" name="_token" value="{{Session::token()}}">
             </fieldset>
         </form>
