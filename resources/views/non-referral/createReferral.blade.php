@@ -80,10 +80,9 @@
                     <label class=" col-md-3 control-label">Destination:</label>
                     <div class="col-md-6">
                         <div class="input-group">
-                            <select class="form-control" id="referralHospitals">
-                                <option>Select Hospital</option>
-                                <option>Muhimbili National Hospital</option>
-                                <option>Mwananyamala Hospital</option>
+                            <select name="destination" class="form-control" id="referralHospitals">
+                                <option value="muhimbili">Muhimbili</option>
+                                <option value="mwananyamala">Mwananyamala</option>
                             </select>
                         </div>
                     </div>
