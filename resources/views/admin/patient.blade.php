@@ -1,7 +1,7 @@
 <div class="col-md-9" id="top">
     <form class="well form-horizontal" id="patient_form" method="post" action="">
         <fieldset style="align-content: center">
-            <legend ><h2 style="text-align: center;">Patient Registration</h2></legend>
+            <legend ><h2 style="text-align: center;">Doctor Registration</h2></legend>
             <div class="form-group">
                 <label class="col-md-3 control-label" for="first_name">First name:</label>
                 <div class="col-md-6">
@@ -74,8 +74,20 @@
                 </div>
             </div>
 
-            <button class="btn btn-primary center-block" type="submit">Register Patient</button>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="special_">Specialization: </label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user-md fa-fw"></i></span>
+                        <input class="form-control" name="special_" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary center-block" type="submit">Register Doctor</button>
             <input type="hidden" name="_token" value="{{Session::token()}}">
         </fieldset>
     </form>
 </div>
+
+

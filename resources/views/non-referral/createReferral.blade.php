@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary center-block" data-submit="modal">Create Referral</button>
+                <button type="submit" class="btn btn-primary center-block">Create Referral</button>
                 <input type="hidden" name="_token" value="{{Session::token()}}">
             </fieldset>
         </form>
