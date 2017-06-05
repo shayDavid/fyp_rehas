@@ -1,6 +1,8 @@
 
 body {
     width: 100%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 14px;
 }
 
 #wrapper {
@@ -128,7 +130,8 @@ body {
 footer {
     padding: 1em;
     color: #FFFFFF;
-    background-color: #2b91a1;
-    clear: both;
     text-align: center;
+    background-color: #2b91a1;
+    position: relative;
+    clear: both;
 }
