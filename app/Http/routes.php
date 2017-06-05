@@ -19,9 +19,10 @@ Route::group(['middleware' => ['web']] , function(){
         return view('non-referral.index');
     });
 
-    Route::get('view', function (){
-        return view('non-referral.viewReferral');
-    });
+    Route::get('/non_referral/view_referral', [
+        'uses' => 'ReferralCtrl@index',
+        'as' => 'non_referral_view'
+    ]);
 
     Route::get('create', function (){
         return view('non-referral.createReferral');
@@ -50,7 +51,7 @@ Route::group(['middleware' => ['web']] , function(){
 });
 
 
-Route::get('/api/referrals/{rid?}', 'ReferralCtrl@index');
+Route::get('/api/referrals', 'ReferralCtrl@index');
 Route::post('/api/create_referral', [
     'uses' => 'ReferralCtrl@store',
     'as' => 'create_referral'

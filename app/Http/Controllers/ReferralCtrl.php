@@ -11,19 +11,12 @@ class ReferralCtrl extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param null $rid
      * @return \Illuminate\Http\Response
      */
-    public function index($rid = null)
+    public function index()
     {
-        if($rid == null) {
             $referrals = Referral::all();
-            return response()->json($referrals);
-        } else {
-            $referral = Referral::findOrFail($rid);
-            return response()->json($referral);
-        }
-
+            return view('non-referral.viewReferral', ['referrals' => $referrals]);
     }
 
     /**
@@ -73,7 +66,8 @@ class ReferralCtrl extends Controller
         $ridOb->destination = $destination;
         $ridOb->status = $status;
         $ridOb->save();
-        return response('Created', 201);
+        return redirect()->route('non_referral_view')->with([
+            'success' => 'Referral has been Created']);
     }
 
     /**
