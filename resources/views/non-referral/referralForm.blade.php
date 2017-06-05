@@ -9,7 +9,7 @@
     <div class="content container">
         <div class="row">
             @include('includes.headerSessions')
-            <div class="col-md-9">
+            <div  id="top" class="col-md-9">
                 <form id="referral_form" class="well form-horizontal" method="post" action="">
                     <fieldset style="align-content: center">
                         {{-- Form Name--}}
@@ -19,7 +19,7 @@
                             <label class="col-md-3 control-label" for="diagnosis">Diagnosis</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
                                     <input name="diagnosis" placeholder="diagnosis" class="form-control"  type="text">
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                             <label class="col-md-3 control-label" for="treatment_given">Treatment Given</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
                                     <input name="treatment_given" placeholder="treatment given" class="form-control"  type="text">
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                             <label class="col-md-3 control-label" for="treatment_recommended">Treatment Recommended</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
                                     <input name="treatment_recommended" placeholder="treatment recommended" class="form-control"  type="text">
                                 </div>
                             </div>
@@ -84,20 +84,23 @@
                             </div>
                         </div>
 
-                        <div class="form-group" style="text-align: center; ">
-                            Type of Referral ( Put an  in the appropriate box)
+                        {{--<div class="form-group" >
+                            <div>
+                                <label class="col-md-offset-3 control-label">Type of Referral ( Put an  in the appropriate box)</label>
+                            </div>
+
                             <div class="radio">
-                                <label><input type="radio"  class="offset-left" name="referralType">Need immediate referral</label>
+                                <label class="col-md-offset-3 control-label"><input type="radio"  class="small text-letterspacing" name="referralType">Need immediate referral</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" class="offset-left" name="referralType">Referral within a month</label>
+                                <label class="col-md-offset-3 control-label"><input type="radio" class="small text-letterspacing" name="referralType">Referral within a month</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" class="offset-left" name="referralType">Not urgent (tick one)</label>
+                                <label class="col-md-offset-3 control-label"><input type="radio" class="small text-letterspacing" name="referralType">Not urgent (tick one)</label>
                             </div>
                         </div>
-
-                        <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#sendData">submit</button>
+--}}
+                        <button type="button" class="btn btn-info btn-lg center-block" data-toggle="modal" data-target="#sendData">continue</button>
                         {{--Modal--}}
                         <div class="modal fade" id="sendData" role="dialog">
                             <div class="modal-dialog">

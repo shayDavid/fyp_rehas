@@ -2,8 +2,13 @@
 @section('content')
     <div class="content container-fluid">
         <div class="row">
-            @include('includes.headerSessions')
-            <div class="col-md-9">
+            {{--@include('includes.headerSessions')--}}
+            <div class=" leftbar col-md-3">
+                <ul class="leftbar  nav nav-pills nav-stacked">
+                    @include('includes.sidebar')
+                </ul>
+            </div>
+            <div class="col-md-9" id="top">
                 <form class="well form-horizontal" action="" method="post" id="registration_form">
                     <fieldset>
                         {{-- Form Name--}}
@@ -12,7 +17,7 @@
                             <label class="col-md-4 control-label">Hospital Name</label>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-hospital-o"></i></span>
                                     <input id="hospital_id" name="hospital_name" class="form-control" placeholder="hospital name" type="text">
                                 </div>
                             </div>

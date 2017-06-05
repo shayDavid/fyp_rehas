@@ -18,24 +18,33 @@ Route::group(['middleware' => ['web']] , function(){
     });
 
     Route::get('view', function (){
-        return view('actions.viewReferral');
+        return view('non-referral.viewReferral');
     });
 
     Route::get('referral', function (){
-        return view('actions.referralForm');
+        return view('non-referral.referralForm');
     });
 
     Route::get('admin', function (){
-        return view('actions.admin');
+        return view('admin.admin');
     });
 
     Route::get('register', function (){
-        return view('actions.registration');
+        return view('admin.registration');
+    });
+    
+    Route::get('hospital', function (){
+        return view('admin.registeredHospital');
     });
 
-    Route::get('hospital', function (){
-        return view('actions.registeredHospital');
+    Route::get('dashboard', function (){
+        return view('referral.dashboard');
     });
+
+    Route::get('received', function (){
+        return view('referral.receivedReferrals');
+    });
+
 });
 
 

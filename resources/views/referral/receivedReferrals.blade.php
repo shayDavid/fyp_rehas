@@ -1,4 +1,3 @@
-
 @extends('layouts.master')
 
 @section('title')
@@ -6,17 +5,32 @@
 @endsection
 
 @section('content')
-    <div class="content container-fluid">
-        <div class="row {{--profile--}}">
-            @include('includes.headerSessions')
-            <div class="col-md-9">
-                    {{-- View attributes of the referral status and available referals here--}}
+    <div class="container">
+        <div class="row">
+            <div class="leftbar col-md-3">
+                <ul class="leftbar nav nav-pills nav-stacked" role="menubar">
+                    @include('includes.sidebar')
+                </ul>
+            </div>
+            <div id="top" class="col-md-9">
+                {{-- View attributes of the referral status and available referals here--}}
                 <form class="well form-horizontal">
                     <fieldset>
-                        <legend><h2 style="text-align: center;">View Referrals</h2></legend>
+                        <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
+                        <div class="nav navbar-collapse">
+                            <form class="form-horizontal">
+                                <div class="input-group">
+                                    <input id="searchMenu" type="text" class="form-control" placeholder="search...">
+                                    <span class="input-group-btn"><button class="btn btn-primary" type="button">
+                                            <i class="fa fa-search"></i></button></span>
+                                </div>
+                            </form>
+                        </div>
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
-                            <table {{--id="myTable"--}} class="table table-hover usr_responsive">
+                            <table id="receivedReferral" class="table table-hover table-responsive"
+                            summary="this table display data received from non-referral hospitals,
+                            Referral hospital can decide whether to accept or deny referral letter">
                                 <thead>
                                 <tr>
                                     <th>#</th>
@@ -35,6 +49,7 @@
                                     <td>Palestina</td>
                                     <td>date</td>
                                     <td>accepted</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
@@ -101,28 +116,6 @@
             </div>
         </div>
     </div>
-    {{--The script below has to be include in view controller
-            The script compares string and filter according to the perfect match
-    --}}
- {{--   <script>
-        var input, filter, table, tr, td, i;
-        input = document.getElementById('mySearch');
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = document.getElementsByTagName("tr");
-        for(i=0; i < tr.length; i++){
-            td = tr[i].getElementsByTagName("td")[0];
-            if(td){
-                if(td.innerHTML.toUpperCase().indexOf(filter) < -1){
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-
-        }
-    </script>--}}
     <br>
     <br>
 @endsection
-

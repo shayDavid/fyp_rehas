@@ -1,36 +1,134 @@
-.e_header {
-    background-color: #259d6d;
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
+
+body {
+    width: 100%;
 }
 
-.navbar-default {
-    background-color: #428bca;
-    border: none;
+#wrapper {
+    width: 100%;
 }
+
+#top {
+    padding-top: 15px;
+}
+.navbar-top-links {
+    margin-right: 0;
+}
+.navbar-top-links li {
+    display: inline-block;
+}
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+#drop .fa-user {
+    color: white;
+}
+.navbar-default {
+    background-color: #2b91a1;
+}
+
 .leftbar {
+    padding-top: 12px;
     align-content: center;
 }
 
-.leftbar img {
-    float: none;
+.leftbar ul li {
     display: block;
-    margin: 0 auto;
-    width: 50%;
-    height: 50%;
-    padding-top: 5px;
-    -webkit-border-radius: 50% !important;
-    -moz-border-radius: 50% !important;
-    border-radius: 50% !important;
+}
+
+.leftbar ul li a {
+    color: #2b91a1;
+    display: block;
+}
+.leftbar ul li a:link, a:visited  {
+    background-color: #2b91a1;
+}
+
+.leftbar ul li a:hover, a:active {
+    display: block;
+    background-color: #36A172;
+}
+
+.bottom1 {
+    padding-bottom: 50px;
+}
+.btn-primary {
+    background-color: #2b91a1;
+    text-decoration-color: white;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #36A172;
+}
+.navbar-login {
+    width: 350px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size {
+    font-size: 87px;
+}
+
+.huge {
+    font-size: 40px;
+}
+.panel-green {
+    border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: white;
+    background-color: #5cb85c;
+}
+.panel-green > a {
+    color: #5cb85c;
+}
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-yellow {
+    border-color: #2b91a1;
+}
+.panel-yellow > .panel-heading {
+    border-color: #2b91a1;
+    color: white;
+    background-color: #2b91a1;
+}
+.panel-yellow > a {
+    color: #2b91a1;
+}
+.panel-yellow > a:hover {
+    color: #36A172;
+}
+
+footer {
+    padding: 1em;
+    color: #FFFFFF;
+    background-color: #2b91a1;
     clear: both;
-}
-
-.dr_title {
     text-align: center;
-    margin-top: 20px;
 }
-
-
-
-

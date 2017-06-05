@@ -1,18 +1,25 @@
 
+<section class="leftbar col-md-3">
+    <div>
+        <form class="well form-horizontal">
+            <fieldset style="align-content: center">
+                <legend><h1 style="text-align: center;"class="small text-letterspacing">current date</h1></legend>
+                <div>
 
-<section class=" leftbar col-md-3">
-    <img  src="{{URL::to('images/noavatar.jpg')}}">
-    <div class="dr_title  panel panel-success">
-        <h3>Dr. FYP</h3>
-        <h3>Title</h3>
+                </div>
+            </fieldset>
+        </form>
     </div>
-    {{--side bar links --}}
-    <ul class="leftbar  nav nav-pills nav-stacked">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="referral">eReferrals</a></li>
-        <li><a href="view" >View referrals</a></li>
-        <li><a href="admin">Admin</a></li>
-        <li><a href="#about">About Us</a></li>
-    </ul>
+    <div>
+        {{--side bar links--}}
+        <ul class="nav nav-pills nav-stacked">
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="/"><i class="fa fa-home fa-fw"></i>Home</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="referral"><i class="fa fa-home fa-fw"></i>eReferrals</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="view" ><i class="fa fa-home fa-fw"></i>View referrals</a><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="admin"><i class="fa fa-home fa-fw"></i>Admin</a></li><br/>
+            <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="#about"><i class="fa fa-home fa-fw"></i>About Us</a></li><br/>
+        </ul>
+    </div>
+
 </section>
 
