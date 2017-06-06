@@ -27,6 +27,7 @@ Route::group(['middleware' => ['web']] , function(){
         return view('non-referral.createReferral');
     })->name('create');
 
+
     Route::get('/admin/home', function (){
         return view('admin.admin');
     })->name('admin');
@@ -60,6 +61,10 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/referral/open', function (){
         return view('referral.openReferral');
     })->name('view');
+
+    Route::get('/HIS/nrp', function (){
+        return view('HIS.nrp');
+    })->name('nrp');
 
 });
 

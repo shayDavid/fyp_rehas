@@ -1,0 +1,51 @@
+body {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 6rem;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+
+.navbar-default {
+background-color: #36A172;
+    }
+
+.fa-envelope, .fa-user {
+    color: #FFFFFF;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+.sidebar {
+    padding: 15px;
+}
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+.sidebar ul li a.active {
+    background-color: #eeeeee;
+}
+.sidebar .arrow {
+    float: right;
+}
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+.sidebar .active > a > .fa.arrow:before {
+    content: "\f107";
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom:0;
+    left: 0;
+    padding: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #36A172;
+    clear: both;
+}
