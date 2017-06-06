@@ -14,7 +14,7 @@
 Route::group(['middleware' => ['web']] , function(){
 
 
-    Route::get('/home', function () {
+    Route::get('/non_referral/home', function () {
         return view('non-referral.index');
     })->name('home');
 
