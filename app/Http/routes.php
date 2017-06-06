@@ -24,9 +24,9 @@ Route::group(['middleware' => ['web']] , function(){
         'as' => 'non_referral_view'
     ]);
 
-    Route::get('create', function (){
+    Route::get('/non_referral/create', function (){
         return view('non-referral.createReferral');
-    });
+    })->name('create');
 
     Route::get('admin', function (){
         return view('admin.admin');

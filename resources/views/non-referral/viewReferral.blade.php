@@ -10,15 +10,6 @@
                     <form class="well form-horizontal">
                         <fieldset>
                             <legend><h2 style="text-align: center;">View Referrals</h2></legend>
-                            <div class="nav navbar-collapse">
-                                <form class="form-horizontal">
-                                    <div class="input-group">
-                                        <input id="searchMenu" type="text" class="form-control" placeholder="search...">
-                                    <span class="input-group-btn"><button class="btn btn-primary" type="button">
-                                            <i class="fa fa-search"></i></button></span>
-                                    </div>
-                                </form>
-                            </div>
                             <div>
                                 <table id="viewReferral" class="table table-responsive table-hover"
                                        summary="This table shows already processed referral letters from non-referral hospital">
