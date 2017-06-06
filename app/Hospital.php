@@ -13,8 +13,8 @@ class Hospital extends Model
     protected $primaryKey = 'hid';
     public $incrementing = false;
 
-    public function referral() {
-        return $this->hasMany('App\Referral');
+    public function doctors() {
+        return $this->hasMany('App\Doctor');
     }
 
 }

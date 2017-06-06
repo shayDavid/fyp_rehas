@@ -15,6 +15,8 @@ class CreateAppointmentsTable extends Migration
         Schema::create('appointments', function (Blueprint $table) {
             $table->string('aid');
             $table->date('appointmentdate');
+            $table->string('referralID');
+            $table->foreign('referralID')->references('rid')->on('referrals');
             $table->primary('aid');
         });
     }

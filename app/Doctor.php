@@ -17,4 +17,8 @@ class Doctor extends Model
         return $this->hasMany('App\Referral');
     }
 
+    public function hospital() {
+        return $this->belongsTo('App\Hospital');
+    }
+
 }

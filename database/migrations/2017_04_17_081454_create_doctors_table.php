@@ -22,6 +22,8 @@ class CreateDoctorsTable extends Migration
             $table->string('contact');
             $table->string('address');
             $table->string('specialization');
+            $table->string('hospitalID');
+            $table->foreign('hospitalID')->references('hid')->on('hospitals');
             $table->primary('docid');
         });
     }

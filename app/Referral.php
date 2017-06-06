@@ -17,15 +17,11 @@ class Referral extends Model
         return $this->belongsTo('App\Doctor');
     }
 
-    public function hospital() {
-        return $this->belongsTo('App\Hospital');
-    }
-
     public function patient() {
         return $this->belongsTo('App\Patient');
     }
 
     public function appointment() {
-        return $this->hasOne('App\Appointment');
+        return $this->belongsTo('App\Appointment');
     }
 }
