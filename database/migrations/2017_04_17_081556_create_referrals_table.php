@@ -23,6 +23,10 @@ class CreateReferralsTable extends Migration
             $table->string('source');
             $table->string('destination');
             $table->string('status');
+            $table->string('patientID');
+            $table->foreign('patientID')->references('pid')->on('patients');
+            $table->string('docID');
+            $table->foreign('docID')->references('docid')->on('doctors');
             $table->primary('rid');
         });
     }

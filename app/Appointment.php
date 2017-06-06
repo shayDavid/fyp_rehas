@@ -14,6 +14,6 @@ class Appointment extends Model
     public $incrementing = false;
 
     public function referral() {
-        return $this->belongsTo('App\Referral');
+        return $this->hasOne('App\Referral');
     }
 }
