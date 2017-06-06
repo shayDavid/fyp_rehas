@@ -2,7 +2,6 @@
 @section('content')
     <div class="content container-fluid">
         <div class="row">
-            {{--@include('includes.headerSessions')--}}
             <div class=" leftbar col-md-3">
                 <ul class="leftbar  nav nav-pills nav-stacked">
                     @include('includes.sidebar')

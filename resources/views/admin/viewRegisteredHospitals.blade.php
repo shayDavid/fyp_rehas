@@ -9,7 +9,6 @@
             </div>
             <div class="col-md-9" id="top">
                 <form id="registeredHospital" class="well form-horizontal" method="post" action="">
-                    {{ csrf_field() }}
                     <fieldset>
                         <legend><h2 style="text-align: center;">Registered Hospitals</h2></legend>
                         <div>
