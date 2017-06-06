@@ -66,6 +66,9 @@ Route::group(['middleware' => ['web']] , function(){
         return view('HIS.nrp');
     })->name('nrp');
 
+    Route::get('/HIS/rp', function (){
+        return view('HIS.rp');
+    })->name('rp');
 });
 
 

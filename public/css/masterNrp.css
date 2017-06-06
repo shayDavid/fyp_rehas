@@ -8,9 +8,9 @@ body {
     background-color: #f8f8f8;
 }
 
-.navbar-default {
+/*.navbar-default {
 background-color: #36A172;
-    }
+    }*/
 
 .fa-envelope, .fa-user {
     color: #FFFFFF;
@@ -46,6 +46,6 @@ footer {
     padding: 1rem;
     color: #FFFFFF;
     text-align: center;
-    background-color: #36A172;
+    /*background-color: #36A172;*/
     clear: both;
 }

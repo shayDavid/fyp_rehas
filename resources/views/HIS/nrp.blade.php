@@ -3,7 +3,7 @@
 @section('header')
     {{--<header>--}}
     <div id="wrapper">
-        <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0;">
+        <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0; background-color:#36A172 ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -94,34 +94,35 @@
             <section class="col-xs-12">
                 <nav class="nav navbar-primary">
                     <div class="container-fluid">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav nav-justified" style="font-family: FontAwesome">
                             <li><a href="{{route('nrp')}}">Dashboard</a></li>
+                            <li><a href="#{{--{{route('')}}--}}">Outpatients</a></li>
                             <li><a href="{{route('home')}}">eReferral</a></li>
-                            <li><a href="{{route('')}}"></a></li>
-                            <li><a></a></li>
-                            <li><a></a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Settings</a></li>
                         </ul>
                     </div>
                 </nav>
             </section>
+            <section class="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-
-    {{--<aside>
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li>
-                        <a href="{{route('nrp')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </aside>--}}
 @endsection
 
 @section('footer')
-    <footer>
+    <footer style="background-color: #36A172">
         <h3 style="text-align: center; font-size: medium;">Copyright &copy; 2017 Non-Referral Hospital. All rights reserved.</h3>
     </footer>
 @endsection
