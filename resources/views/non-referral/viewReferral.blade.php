@@ -35,7 +35,7 @@
                                             <td>{{ $referrals[$i]->status }}</td>
                                             <td></td>
                                         </tr>
-                                    @endforgt
+                                    @endfor
                                     </tbody>
                                 </table>
                             </div>
