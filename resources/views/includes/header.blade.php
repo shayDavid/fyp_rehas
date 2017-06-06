@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" style="color: #FFFFFF; padding-left:
+                <a class="navbar-brand" href="{{route('home')}}" style="color: #FFFFFF; padding-left:
             50px; font-family: FontAwesome; font-size: x-large">ReHAS</a>
             </div>
 
@@ -29,7 +29,7 @@
                     </form>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #FFFFFF;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{--{{route('')}}--}}#" style="color: #FFFFFF;">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
@@ -46,7 +46,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#">
+                            <a href="#{{--{{route('')}}--}}">
                                 <div>
                                     <strong>John Marunda</strong>
                                     <span class="pull-right text-muted">

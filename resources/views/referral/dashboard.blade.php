@@ -4,12 +4,9 @@
         <div class="row">
             <div class=" leftbar col-md-3" id="sidebar">
                 <ul  class="leftbar nav nav-pills nav-stacked">
-                    <li><a href="#home" style="color: #ffffff;"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a></li><br/>
-                    <li><a href="register" style="color: #ffffff;"><i class="fa fa-hospital-o fa-fw"></i>Hospital</a></li><br/>
-                    <li><a href="#registeredHospital" style="color: #ffffff;"><i class="fa fa-stethoscope fa-fw"></i>Doctor</a></li><br/>
-                    <li><a href="#Update"  style="color: #ffffff;"><i class="fa fa-users fa-fw"></i>Patients</a></li><br/>
-                    <li><a href="#support" style="color: #ffffff;"><i class="fa fa-gear fa-fw"></i>Settings</a></li><br/>
-                    <li><a href="#about" style="color: #ffffff;">About Us</a></li><br/>
+                    <li><a href="{{route('dashboard')}}" style="color: #ffffff;"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a></li><br/>
+                    <li><a href="{{route('received')}}" style="color: #ffffff;"><i class="fa fa-hospital-o fa-fw"></i>Received Referral</a></li><br/>
+                    <li><a href="{{route('view')}}" style="color: #ffffff;"><i class="fa fa-stethoscope fa-fw"></i>View</a></li><br/>
                 </ul>
             </div>
 

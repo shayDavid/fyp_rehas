@@ -13,40 +13,53 @@
 
 Route::group(['middleware' => ['web']] , function(){
 
-    /*Route::controller('/', 'ReferralCtrl@index');*/
 
-    Route::get('/', function () {
+    Route::get('/home', function () {
         return view('non-referral.index');
-    });
+    })->name('home');
 
     Route::get('/non_referral/view_referral', [
         'uses' => 'ReferralCtrl@index',
         'as' => 'non_referral_view'
     ]);
 
-    Route::get('create', function (){
+    Route::get('/non_referral/create', function (){
         return view('non-referral.createReferral');
-    });
+    })->name('create');
 
-    Route::get('admin', function (){
+    Route::get('/admin/home', function (){
         return view('admin.admin');
-    });
+    })->name('admin');
 
-    Route::get('register', function (){
+    Route::get('/admin/register', function (){
         return view('admin.registration');
-    });
+    })->name('register');
     
-    Route::get('hospital', function (){
-        return view('admin.registeredHospital');
-    });
+    Route::get('/admin/hospital', function (){
+        return view('admin.viewRegisteredHospitals');
+    })->name('hospital');
 
-    Route::get('dashboard', function (){
+    Route::get('/admin/doctor', function (){
+        return view('admin.doctor');
+    })->name('doctor');
+
+    Route::get('/admin/patient', function (){
+        return view('admin.patient');
+    })->name('patient');
+
+
+
+    Route::get('/referral/dashboard', function (){
         return view('referral.dashboard');
-    });
+    })->name('dashboard');
 
-    Route::get('received', function (){
+    Route::get('/referral/received', function (){
         return view('referral.receivedReferrals');
-    });
+    })->name('received');
+
+    Route::get('/referral/open', function (){
+        return view('referral.openReferral');
+    })->name('view');
 
 });
 
