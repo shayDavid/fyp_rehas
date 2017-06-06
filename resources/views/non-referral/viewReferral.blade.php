@@ -16,7 +16,7 @@
                                     <caption class="text-center"></caption>
                                     <thead>
                                     <tr>
-                                        <th>#</th>
+                                        <th>No</th>
                                         <th>Referral ID</th>
                                         <th>Patient Name</th>
                                         <th>Referral Hospital</th>

@@ -9,7 +9,6 @@
                     <li><a href="{{route('view')}}" style="color: #ffffff;"><i class="fa fa-stethoscope fa-fw"></i>View</a></li><br/>
                 </ul>
             </div>
-
             <div class="col-md-9" id="top">
 
             </div>
