@@ -15,10 +15,9 @@
             <div id="top" class="col-md-9">
                 {{-- View attributes of the referral status and available referals here--}}
                 <form class="well form-horizontal">
-                    {{ csrf_field() }}
                     <fieldset>
                         <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
-                        <div class="nav navbar-collapse">
+                        {{--<div class="nav navbar-collapse">
                             <form class="form-horizontal">
                                 <div class="input-group">
                                     <input id="searchMenu" type="text" class="form-control" placeholder="search...">
@@ -26,7 +25,7 @@
                                             <i class="fa fa-search"></i></button></span>
                                 </div>
                             </form>
-                        </div>
+                        </div>--}}
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
                             <table id="receivedReferral" class="table table-hover table-responsive"
@@ -34,7 +33,7 @@
                             Referral hospital can decide whether to accept or deny referral letter">
                                 <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>No</th>
                                     <th>Reg#</th>
                                     <th>Patient name</th>
                                     <th>Hospital name</th>

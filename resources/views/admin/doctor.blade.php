@@ -92,7 +92,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <button class="btn btn-primary center-block" type="submit">Register Doctor</button>
                         <input type="hidden" name="_token" value="{{Session::token()}}">
                     </fieldset>
