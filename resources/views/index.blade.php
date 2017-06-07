@@ -20,38 +20,34 @@
 <body>
     <div class="container-fluid" id="LoginP">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-6 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title" style="text-align: center">Hospital Information System Login</h3>
                     </div>
                     <div class="panel-body">
                         <form class="form-horizontal" role="form">
                             <fieldset>
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label" for="user_id">User Id: </label>
-                                    <div class="col-md-5">
+                                    <label class="col-md-3 control-label" for="username">Username: </label>
+                                    <div class="col-md-6">
                                         <div class="input-group">
-                                            <input class="form-control" name="user_id" type="text"  value="user_id" autofocus required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input class="form-control" name="username" type="text"  placeholder="username " value="username" autofocus required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="password">Password: </label>
-                                    <div class="col-md-5">
+                                    <div class="col-md-6">
                                         <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                             <input class="form-control" name="password" type="text" value="password" autofocus required>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="checkbox">
-                                    <label class="col-md-3 col-md-offset-2 control-label">
-                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                    </label>
-                                </div>
-
                                 <div class="Button">
-                                    <button class="btn btn-primary" type="submit">Login</button>
+                                    <button class="btn btn-primary btn-block" type="submit">Login</button>
                                     <input type="hidden" name="_token" value="{{Session::token()}}">
                                 </div>
 
