@@ -20,13 +20,18 @@
 <body>
     <div class="container-fluid" id="LoginP">
         <div class="row">
+            @if(Session::has('fail'))
+                {{ Session::get('fail') }}
+            @endif
+        </div>
+        <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="login-panel panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="text-align: center; font-family: FontAwesome">Hospital Information System Login</h3>
                     </div>
                     <div class="panel-body">
-                        <form class="form-horizontal" role="form">
+                        <form class="form-horizontal" role="form" action="{{ route('hisLogin') }}" method="post">
                             <fieldset>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="username">Username: </label>

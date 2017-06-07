@@ -16,7 +16,18 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/', function (){
         return view('index');
     });
-    
+
+    //HIS routes
+    Route::post('/his/login', [
+        'uses' => 'LoginCtrl@postLogin',
+        'as' => 'hisLogin'
+    ]);
+    Route::get('/his/nrp/home', [
+        'uses' => 'LoginCtrl@getHisNrpHome',
+        'as' => 'hisNrpHome'
+    ]);
+
+    //ReHAS routes
     Route::get('/nrp/home', function () {
         return view('non-referral.index');
     })->name('home');
