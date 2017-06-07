@@ -20,11 +20,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                @if(Session::has('fail'))
-                    <section>
-                        {{ Session::get('fail') }}
-                    </section>
-                @endif
+                <div class="row">
+                    @if(Session::has('fail'))
+                        <div class="alert alert-danger">
+                            @if(Session::has('fail'))
+                                <section>
+                                    {{ Session::get('fail') }}
+                                </section>
+                            @endif
+                        </div>
+                    @endif
+                </div>
                 <div class="login-panel panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="text-align: center; font-family: FontAwesome">Hospital Information System Login</h3>

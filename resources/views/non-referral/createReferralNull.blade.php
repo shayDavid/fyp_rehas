@@ -6,10 +6,14 @@
             <div class="col-md-9" id="top">
                     <fieldset style="align-content: center">
                         <legend><h2 style="text-align: center;">Create Referral</h2></legend>
+                        @if(Session::has('msg'))
+                            <div class="alert alert-danger">
+                                @if(Session::has('msg'))
+                                    {{ Session::get('msg') }}
+                                @endif
+                            </div>
+                        @endif
                         <div>
-                            @if(Session::has('msg'))
-                                {{ Session::get('msg') }}
-                            @endif
                             <p>Please search for a patient that you want to refer to a referral hospital</p>
                         </div>
                         <div>
