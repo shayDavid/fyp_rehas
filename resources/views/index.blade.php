@@ -7,7 +7,6 @@
         <title>HIS</title>
 
         {{-- Bootstrap core css --}}
-
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/bootstrap.css')}}">
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/bootstrap.min.css')}}">
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/font-awesome.min.css')}}">
@@ -17,8 +16,8 @@
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/styles.css')}}">
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/masterNrp.css')}}">
     </head>
-<body>
-    <div class="container-fluid" id="LoginP">
+<body id="login_page">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="login-panel panel panel-primary">
@@ -33,7 +32,7 @@
                                     <div class="col-md-6">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                            <input class="form-control" name="username" type="text"  placeholder="username " value="username" autofocus required>
+                                            <input class="form-control" name="username" type="text"  placeholder="username" autofocus required>
                                         </div>
                                     </div>
                                 </div>
@@ -42,7 +41,7 @@
                                     <div class="col-md-6">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                            <input class="form-control" name="password" type="text" value="password" autofocus required>
+                                            <input class="form-control" name="password" type="password" placeholder="password" autofocus required>
                                         </div>
                                     </div>
                                 </div>

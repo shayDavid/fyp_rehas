@@ -104,15 +104,20 @@
                     </div>
                 </nav>
             </section>
-            <section class="">
-                <div class="container-fluid">
+            <section style="padding-top: 12px">
+                <div class="container-fluid" >
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-9 col-md-offset-2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title-bg" style="text-align: center;
+                                     font-family: FontAwesome">Non-Referral Hospital Information System </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="article-header">Demo System for Non-Referral Practitioners</p>
 
-                        </div>
-
-                        <div class="col-md-6">
-
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,7 +127,7 @@
 @endsection
 
 @section('footer')
-    <footer style="background-color: #36A172">
+    <footer style="background-color: #36A172;">
         <h3 style="text-align: center; font-size: medium;">Copyright &copy; 2017 Non-Referral Hospital. All rights reserved.</h3>
     </footer>
 @endsection

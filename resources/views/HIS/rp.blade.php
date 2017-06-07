@@ -91,7 +91,7 @@
 @section('main')
     <div class="container-fluid" style="padding-top: 12px">
         <div class="row">
-            <section class="col-xs-3">
+            <section class="col-md-3">
                 <nav class="leftbar">
                     <div class="container-fluid">
 
@@ -105,19 +105,9 @@
                     </div>
                 </nav>
             </section>
-            <section class="">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-3">
-
-                        </div>
-
-                        <div class="col-md-6">
-
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="col-md-6">
+                <div class="panel"></div>
+            </div>
         </div>
     </div>
 @endsection
