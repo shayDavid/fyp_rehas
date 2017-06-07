@@ -15,7 +15,7 @@ Route::get('/', function (){
     return view('index');
 })->name('index');
 
-Route::group(['middleware' => ['web'], ['auth']] , function(){
+Route::group(['middleware' => ['web', 'auth']] , function(){
 
     //HIS routes
     Route::post('/his/login', [
