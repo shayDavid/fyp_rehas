@@ -19,7 +19,8 @@ class LoginCtrl extends Controller
     public function postLogin(Request $request) {
         if(!Auth::attempt(['loginID' => $request['username'], 'password' => $request['password']])) {
             return redirect()->back()->with(['fail' => 'Wrong Username or Password']);
-        } else {
+        }
+        else {
             $title = DB::table('h_i_slogins')->where('loginID', $request['username'])->value('title');
             if($title == "NRP") {
                 return redirect()->route('hisNrpHome');

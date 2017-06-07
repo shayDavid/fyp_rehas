@@ -15,13 +15,14 @@ Route::get('/', function (){
     return view('index');
 })->name('index');
 
+Route::post('/his/login', [
+    'uses' => 'LoginCtrl@postLogin',
+    'as' => 'hisLogin'
+]);
+
 Route::group(['middleware' => ['auth']] , function(){
 
     //HIS routes
-    Route::post('/his/login', [
-        'uses' => 'LoginCtrl@postLogin',
-        'as' => 'hisLogin'
-    ]);
     Route::get('/his/nrp/home', [
         'uses' => 'LoginCtrl@getHisNrpHome',
         'as' => 'hisNrpHome'
