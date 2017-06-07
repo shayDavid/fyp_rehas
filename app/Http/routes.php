@@ -29,7 +29,7 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/nrp/create', function (){
         return view('non-referral.createReferral');
     })->name('create');
-    
+
     Route::get('/referral/dashboard', function (){
         return view('referral.dashboard');
     })->name('dashboard');

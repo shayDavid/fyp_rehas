@@ -15,6 +15,7 @@ class CreateHISloginsTable extends Migration
         Schema::create('h_i_slogins', function (Blueprint $table) {
             $table->string('loginID');
             $table->string('password');
+            $table->string('title');
             $table->primary('loginID');
         });
     }
