@@ -52,11 +52,19 @@
                             <h3 class="panel-title-lg" style="text-align: center; font-family: FontAwesome">Referral Hospital Dashboard</h3>
                         </div>
 
-                        <div class="panel-body"></div>
+                        <div class="panel-body">
+                            <div class="article-header"></div>
+                            <div class="article-body"></div>
+                            <div></div>
+                        </div>
                     </div>
             </div>
         </div>
-
-
     </div>
+@endsection
+
+@section('footer')
+    <footer>
+        <h3 style="text-align: center; font-size: medium;">Copyright &copy; 2017 Referral Hospital. All rights reserved.</h3>
+    </footer>
 @endsection
