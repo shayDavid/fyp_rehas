@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{route('rp')}}" style="color: #FFFFFF; padding-left:
-            50px; font-family: FontAwesome; font-size: x-large">Referral Practitioner</a>
+            50px; font-family: FontAwesome; font-size: x-large">ReHAS</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">
@@ -59,8 +59,14 @@
                     </div>
                 </nav>
             </section>
-            <div class="col-md-6">
-                <div class="panel"></div>
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title-bg" style="text-align: center;
+                                     font-family: FontAwesome">Referral Hospital Information System </h3>
+                    </div>
+                    <div class="panel-body"></div>
+                </div>
             </div>
         </div>
     </div>

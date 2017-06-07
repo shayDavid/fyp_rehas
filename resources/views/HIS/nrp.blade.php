@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{route('nrp')}}" style="color: #FFFFFF; padding-left:
-            50px; font-family: FontAwesome; font-size: x-large">Non-Referral Practitioner</a>
+            50px; font-family: FontAwesome; font-size: x-large">ReHAS</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">
