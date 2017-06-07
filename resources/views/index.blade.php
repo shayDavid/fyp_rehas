@@ -23,7 +23,7 @@
             <div class="col-md-6 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title" style="text-align: center">Hospital Information System Login</h3>
+                        <h3 class="panel-title" style="text-align: center; font-family: FontAwesome">Hospital Information System Login</h3>
                     </div>
                     <div class="panel-body">
                         <form class="form-horizontal" role="form">
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                                 <div class="Button">
-                                    <button class="btn btn-primary btn-block" type="submit">Login</button>
+                                    <button class="btn btn-primary btn-md center-block" type="submit">Login</button>
                                     <input type="hidden" name="_token" value="{{Session::token()}}">
                                 </div>
 
