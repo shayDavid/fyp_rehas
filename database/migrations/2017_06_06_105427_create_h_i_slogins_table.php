@@ -16,6 +16,7 @@ class CreateHISloginsTable extends Migration
             $table->string('loginID');
             $table->string('password');
             $table->string('title');
+            $table->rememberToken();
             $table->primary('loginID');
         });
     }
