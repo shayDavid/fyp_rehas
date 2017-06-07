@@ -3,6 +3,17 @@
     <div class="container-fluid">
         <div class="row">
             @include('includes.headerSessions')
+
+            @for($i = 0; $i < count($patient); $i++)
+                <ul>
+                    <li>{{ $patient[$i]->pid }}</li>
+                    <li>{{ $patient[$i]->firstname }}</li>
+                    <li>{{ $patient[$i]->lastname }}</li>
+                    <li>{{ $patient[$i]->gender }}</li>
+                    <li>{{ $patient[$i]->contact }}</li>
+                </ul>
+            @endfor
+
             <div class="col-md-9" id="top">
                 <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
                     <fieldset style="align-content: center">

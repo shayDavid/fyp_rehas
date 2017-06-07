@@ -27,35 +27,7 @@
                             </div>
                         </div>
                     </section>
-                    <section>
-                        <table id="viewReferral" class="table table-responsive table-hover"
-                               summary="This table shows already processed referral letters from non-referral hospital">
-                            <caption class="text-center"></caption>
-                            <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Patient ID</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Gender</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @for($i = 0; $i < 3; $i++)
-                                <tr>
-                                    <th scope="row">{{ $i + 1 }}</th>
-                                    <td>{{ $patients[$i]->pid }}</td>
-                                    <td>{{ $patients[$i]->firstname }}</td>
-                                    <td>{{ $patients[$i]->lastname }}</td>
-                                    <td>{{ $patients[$i]->gender }}</td>
-                                    <td></td>
-                                </tr>
-                            @endfor
-                            </tbody>
-                        </table>
-                    </section>
                 </div>
-
             </div>
         </div>
     </div>

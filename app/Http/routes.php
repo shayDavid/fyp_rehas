@@ -40,8 +40,13 @@ Route::group(['middleware' => ['auth']] , function(){
 
     //ReHAS routes
     Route::get('/nrp/home', [
-        'uses' => 'HISPatientCtrl@getPatient',
+        'uses' => 'HISPatientCtrl@getHome',
         'as' => 'home'
+    ]);
+
+    Route::post('/nrp/patient/create', [
+       'uses' => 'HISPatientCtrl@patientSearch',
+        'as' => 'patientSearch'
     ]);
 
     Route::get('/nrp/view_referral', [
@@ -50,7 +55,7 @@ Route::group(['middleware' => ['auth']] , function(){
     ]);
 
     Route::get('/nrp/create', function (){
-        return view('non-referral.createReferral');
+        return view('non-referral.createReferralNull');
     })->name('create');
 
     Route::get('/referral/dashboard', function (){
