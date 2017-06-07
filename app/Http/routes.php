@@ -13,7 +13,10 @@
 
 Route::group(['middleware' => ['web']] , function(){
 
-
+    Route::get('/', function (){
+        return view('index');
+    });
+    
     Route::get('/nrp/home', function () {
         return view('non-referral.index');
     })->name('home');
