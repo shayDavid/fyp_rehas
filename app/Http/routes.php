@@ -11,11 +11,11 @@
 |
 */
 
-Route::group(['middleware' => ['web']] , function(){
+Route::get('/', function (){
+    return view('index');
+})->name('index');
 
-    Route::get('/', function (){
-        return view('index');
-    });
+Route::group(['middleware' => ['web'], ['auth']] , function(){
 
     //HIS routes
     Route::post('/his/login', [
@@ -25,6 +25,16 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/his/nrp/home', [
         'uses' => 'LoginCtrl@getHisNrpHome',
         'as' => 'hisNrpHome'
+    ]);
+
+    Route::get('/his/rp/home', [
+        'uses' => 'LoginCtrl@getHisRpHome',
+        'as' => 'hisRpHome'
+    ]);
+
+    Route::get('/his/logout', [
+       'uses' => 'LoginCtrl@hisLogout',
+        'as' => 'hisLogout'
     ]);
 
     //ReHAS routes
@@ -60,12 +70,10 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/HIS/rp', function (){
         return view('HIS.rp');
     })->name('rp');
+
+    Route::get('/api/referrals', 'ReferralCtrl@index');
+    Route::post('/api/create_referral', [
+        'uses' => 'ReferralCtrl@store',
+        'as' => 'create_referral'
+    ]);
 });
-
-
-Route::get('/api/referrals', 'ReferralCtrl@index');
-Route::post('/api/create_referral', [
-    'uses' => 'ReferralCtrl@store',
-    'as' => 'create_referral'
-]);
-Route::delete('/api/delete_referral/{rid}', 'ReferralCtrl@destroy');
