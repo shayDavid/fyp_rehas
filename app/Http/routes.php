@@ -39,9 +39,10 @@ Route::group(['middleware' => ['auth']] , function(){
     ]);
 
     //ReHAS routes
-    Route::get('/nrp/home', function () {
-        return view('non-referral.index');
-    })->name('home');
+    Route::get('/nrp/home', [
+        'uses' => 'HISPatientCtrl@getPatient',
+        'as' => 'home'
+    ]);
 
     Route::get('/nrp/view_referral', [
         'uses' => 'ReferralCtrl@index',
