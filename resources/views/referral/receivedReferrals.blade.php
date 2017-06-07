@@ -9,7 +9,7 @@
         <div class="row">
             <div class="leftbar col-md-3" id="sidebar">
                 <ul class="leftbar nav nav-pills nav-stacked" role="menubar">
-                    @include('includes.sidebar')
+                    @include('includes.sidebarRp')
                 </ul>
             </div>
             <div id="top" class="col-md-9">
@@ -17,15 +17,6 @@
                 <form class="well form-horizontal">
                     <fieldset>
                         <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
-                        {{--<div class="nav navbar-collapse">
-                            <form class="form-horizontal">
-                                <div class="input-group">
-                                    <input id="searchMenu" type="text" class="form-control" placeholder="search...">
-                                    <span class="input-group-btn"><button class="btn btn-primary" type="button">
-                                            <i class="fa fa-search"></i></button></span>
-                                </div>
-                            </form>
-                        </div>--}}
                         <div>
                             {{-- this table data can be fetched from a controller as an array of data--}}
                             <table id="receivedReferral" class="table table-hover table-responsive"
