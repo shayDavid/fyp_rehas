@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/masterNrp.css')}}">
     </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="LoginP">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
