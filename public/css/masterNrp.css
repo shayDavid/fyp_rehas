@@ -38,6 +38,11 @@ background-color: #36A172;
 .sidebar .active > a > .fa.arrow:before {
     content: "\f107";
 }
+
+.login-panel {
+    margin-top: 25%;
+}
+
 footer {
     position: absolute;
     right: 0;
