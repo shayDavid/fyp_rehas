@@ -29,27 +29,6 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/nrp/create', function (){
         return view('non-referral.createReferral');
     })->name('create');
-
-
-    Route::get('/admin/home', function (){
-        return view('admin.admin');
-    })->name('admin');
-
-    Route::get('/admin/register', function (){
-        return view('admin.registration');
-    })->name('register');
-    
-    Route::get('/admin/hospital', function (){
-        return view('admin.viewRegisteredHospitals');
-    })->name('hospital');
-
-    Route::get('/admin/doctor', function (){
-        return view('admin.doctor');
-    })->name('doctor');
-
-    Route::get('/admin/patient', function (){
-        return view('admin.patient');
-    })->name('patient');
     
     Route::get('/referral/dashboard', function (){
         return view('referral.dashboard');
