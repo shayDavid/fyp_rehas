@@ -14,16 +14,16 @@
 Route::group(['middleware' => ['web']] , function(){
 
 
-    Route::get('/non_referral/home', function () {
+    Route::get('/nrp/home', function () {
         return view('non-referral.index');
     })->name('home');
 
-    Route::get('/non_referral/view_referral', [
+    Route::get('/nrp/view_referral', [
         'uses' => 'ReferralCtrl@index',
         'as' => 'non_referral_view'
     ]);
 
-    Route::get('/non_referral/create', function (){
+    Route::get('/nrp/create', function (){
         return view('non-referral.createReferral');
     })->name('create');
 
@@ -47,9 +47,7 @@ Route::group(['middleware' => ['web']] , function(){
     Route::get('/admin/patient', function (){
         return view('admin.patient');
     })->name('patient');
-
-
-
+    
     Route::get('/referral/dashboard', function (){
         return view('referral.dashboard');
     })->name('dashboard');
