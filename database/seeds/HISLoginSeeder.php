@@ -12,26 +12,23 @@ class HISLoginSeeder extends Seeder
      */
     public function run()
     {
-        $hospital = new HISlogin();
-        $hospital->loginID = "MUD-0510-0100";
-        $password = bcrypt('Don');
-        $hospital->password = $password;
-        $hospital->title = "RP";
-        $hospital->save();
+        $hisuser = new HISlogin();
+        $hisuser->loginID = "MUD-0510-0100";
+        $hisuser->password = bcrypt('Don');;
+        $hisuser->title = "RP";
+        $hisuser->save();
 
-        $hospital = new HISlogin();
-        $hospital->loginID = "UDD-0510-0020";
-        $password = bcrypt('Leon');
-        $hospital->password = $password;
-        $hospital->title = "NRP";
-        $hospital->save();
+        $hisuser = new HISlogin();
+        $hisuser->loginID = "UDD-0510-0020";
+        $hisuser->password = bcrypt('Leon');
+        $hisuser->title = "NRP";
+        $hisuser->save();
 
-        $hospital = new HISlogin();
-        $hospital->loginID = "MWD-0510-0010";
-        $password = bcrypt('Shay');
-        $hospital->password = $password;
-        $hospital->title = "NRP";
-        $hospital->save();
+        $hisuser = new HISlogin();
+        $hisuser->loginID = "MWD-0510-0010";
+        $hisuser->password = bcrypt('Shay');
+        $hisuser->title = "NRP";
+        $hisuser->save();
 
     }
 }
