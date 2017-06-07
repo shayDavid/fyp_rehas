@@ -20,8 +20,8 @@
 <body>
     <div class="container-fluid" id="LoginP">
         <div class="row">
-            <div class="col-md-6 col-md-offset-4">
-                <div class="login-panel panel panel-default">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="login-panel panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="text-align: center; font-family: FontAwesome">Hospital Information System Login</h3>
                     </div>
