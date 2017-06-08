@@ -81,11 +81,8 @@
         </div>
     </div>
 @endsection
-    <footer style="background-color: #36A172;">
-        <h3 style="text-align: center; font-size: medium;">Copyright &copy; 2017 Referral Hospital. All rights reserved.</h3>
-    </footer>
 @section('footer')
-    <footer>
+    <footer style="background-color: #2b91a1;">
         <h3 style="text-align: center; font-size: medium;">Copyright &copy; 2017 Referral Hospital. All rights reserved.</h3>
     </footer>
 @endsection
