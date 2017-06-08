@@ -3,23 +3,76 @@
     <div class="container-fluid">
         <div class="row">
             @include('includes.headerSessions')
-
-            @for($i = 0; $i < count($patient); $i++)
-                <ul>
-                    <li>{{ $patient[$i]->pid }}</li>
-                    <li>{{ $patient[$i]->firstname }}</li>
-                    <li>{{ $patient[$i]->lastname }}</li>
-                    <li>{{ $patient[$i]->gender }}</li>
-                    <li>{{ $patient[$i]->contact }}</li>
-                </ul>
-            @endfor
-
             <div class="col-md-9" id="top">
                 <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
                     <fieldset style="align-content: center">
                         {{-- Form Name--}}
                         <legend><h2 style="text-align: center;">Create Referral</h2></legend>
+                        <legend><h4 style="text-align: center;">Patient Demographic Information</h4></legend>
 
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Patient ID</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <input name="pid" value="{{ $patient[0]->pid }}" class="form-control"  type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" >First Name</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <input name="firstname" value="{{ $patient[0]->firstname }}" class="form-control"  type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" >Last Name</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <input name="lastname" value="{{ $patient[0]->lastname }}" class="form-control"  type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" >Gender</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <input name="gender" value="{{ $patient[0]->gender }}" class="form-control"  type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" >Contact</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <input name="contact" value="{{ $patient[0]->contact }}" class="form-control"  type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" >Address</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <input name="address" value="{{ $patient[0]->address }}" class="form-control"  type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="middlename" value="{{ $patient[0]->middlename }}">
+                        <input type="hidden" name="dob" value="{{ $patient[0]->dob }}">
+
+                        <legend><h4 style="text-align: center;">Referral Information</h4></legend>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="diagnosis">Diagnosis</label>
                             <div class="col-md-6">
