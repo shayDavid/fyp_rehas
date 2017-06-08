@@ -25,10 +25,10 @@ class LoginCtrl extends Controller
             $doctor = DB::table('h_i_s_doctors')->where('docid', $request['username'])->get();
             $doctorName = $doctor[0]->firstname." ".$doctor[0]->lastname;
             if($title == "NRP") {
-                $request->session()->flash('doctorName', $doctorName);
+                $request->session()->put('doctorName', $doctorName);
                 return redirect()->route('hisNrpHome');
             } else {
-                $request->session()->flash('doctorName', $doctorName);
+                $request->session()->put('doctorName', $doctorName);
                 return redirect()->route('hisRpHome');
             }
         }
