@@ -7,6 +7,7 @@
             <section id="top">
                 <div class="col-md-9">
                     {{-- View attributes of the referral status and available referals here--}}
+                    <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                     <form class="well form-horizontal">
                         <fieldset>
                             <legend><h2 style="text-align: center;">View Referrals</h2></legend>

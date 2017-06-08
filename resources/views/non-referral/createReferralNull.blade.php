@@ -5,6 +5,7 @@
             @include('includes.headerSessions')
             <div class="col-md-9" id="top">
                     <fieldset style="align-content: center">
+                        <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                         <legend><h2 style="text-align: center;">Create Referral</h2></legend>
                         @if(Session::has('msg'))
                             <div class="alert alert-danger">
