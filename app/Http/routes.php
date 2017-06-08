@@ -50,7 +50,7 @@ Route::group(['middleware' => ['auth']] , function(){
     ]);
 
     Route::get('/nrp/view_referral', [
-        'uses' => 'ReferralCtrl@index',
+        'uses' => 'ReferralCtrl@getReferrals',
         'as' => 'non_referral_view'
     ]);
 
@@ -62,9 +62,15 @@ Route::group(['middleware' => ['auth']] , function(){
         return view('referral.dashboard');
     })->name('dashboard');
 
-    Route::get('/referral/received', function (){
-        return view('referral.receivedReferrals');
-    })->name('received');
+    Route::get('/referral/received', [
+        'uses' => 'ReferralCtrl@getReferralRp',
+        'as' => 'referral_view'
+    ]);
+
+    Route::get('/referral/open/{rid}', [
+        'uses' => 'ReferralCtrl@openSingleReferral',
+        'as' => 'openReferral'
+    ]);
 
     Route::get('/HIS/nrp', function (){
         return view('HIS.nrp');

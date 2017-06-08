@@ -17,7 +17,7 @@ class ReferralCtrl extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function getReferrals()
     {
             $referrals = Referral::all();
             $patientName = array();
@@ -32,14 +32,26 @@ class ReferralCtrl extends Controller
             return view('non-referral.viewReferral', ['referrals' => $referrals, 'patientName' => $patientName]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+
+    public function getReferralRp() {
+        $referrals = Referral::all();
+        $patientName = array();
+        if(count($referrals) > 0) {
+            for ($i = 0; $i < count($referrals); $i++) {
+                $patientID = $referrals[$i]->patientID;
+                $patient = DB::table('patients')->where('pid', $patientID)->get();
+                $patientName[$i] = $patient[0]->firstname . " " . $patient[0]->lastname;
+            }
+        }
+
+        return view('referral.receivedReferrals', ['referrals' => $referrals, 'patientName' => $patientName]);
+    }
+
+    public function openSingleReferral($rid) {
+        $singleReferral = DB::table('referrals')->where('rid', $rid)->get();
+        $patientID = $singleReferral[0]->patientID;
+        $patient = DB::table('patients')->where('pid', $patientID)->get();
+        return view('referral.openReferral', ['singleReferral' => $singleReferral, 'patient' => $patient]);
     }
 
     /**
