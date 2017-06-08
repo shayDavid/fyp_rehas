@@ -233,8 +233,8 @@
                                             </div>
                                         </div>
                                         <a href="{{ URL::route('referral_view') }}" class="btn btn-primary">Deny</a>
+                                        <input type="hidden" name="_token" value="{{Session::token()}}">
                                     </div>
-                                    <input type="hidden" name="_token" value="{{Session::token()}}">
                                 </div>
                             </div>
                         </div>
