@@ -20,15 +20,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <div class="row">
+                <div style="margin-top: 20%">
                     @if(Session::has('fail'))
-                        <div class="alert alert-danger">
-                            @if(Session::has('fail'))
-                                <section>
-                                    {{ Session::get('fail') }}
-                                </section>
-                            @endif
+                        <div class="alert alert-danger" style="margin-bottom: 0">
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa fa-exclamation-triangle fa-li fa-lg"></i>
+                                    @if(Session::has('fail'))
+                                        <section>
+                                            {{Session::get('fail')}}
+                                        </section>
+                                    @endif
+                                </li>
+                            </ul>
                         </div>
+                        <br/>
                     @endif
                 </div>
                 <div class="login-panel panel panel-primary">

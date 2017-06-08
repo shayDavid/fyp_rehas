@@ -12,10 +12,10 @@
         <div>
             {{--side bar links--}}
             <ul class="nav nav-pills nav-stacked">
-                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{route('home')}}"><i class="fa fa-home fa-fw"></i>Home</a></li><br/>
-                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{ route('create') }}"><i class="fa fa-file-text-o fa-fw"></i>Create Referral</a></li><br/>
-                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{ route('non_referral_view') }}" ><i class="fa fa-street-view fa-fw"></i>View referrals</a><br/>
-                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{route('nrp')}}"><i class="fa fa-hospital-o fa-fw"></i>HIS</a></li><br/>
+                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{route('home')}}"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a></li><br/>
+                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{ route('create') }}"><i class="fa fa-file-text-o fa-fw"></i>&nbsp;Create Referral</a></li><br/>
+                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{ route('non_referral_view') }}" ><i class="fa fa-street-view fa-fw"></i>&nbsp;View referrals</a><br/>
+                <li><a class="small text-uppercase text-letterspacing" style="color: #ffffff;" href="{{route('nrp')}}"><i class="fa fa-hospital-o fa-fw"></i>&nbsp;HIS</a></li><br/>
             </ul>
         </div>
     </div>

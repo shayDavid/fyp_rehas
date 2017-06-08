@@ -3,16 +3,6 @@
     <div class="container-fluid">
         <div class="row">
             @include('includes.headerSessions')
-<<<<<<< HEAD
-            @for($i = 0; $i < count($patient); $i++)
-                <ul>
-                    <li>{{ $patient[$i]->pid }}</li>
-                    <li>{{ $patient[$i]->firstname }}</li>
-                    <li>{{ $patient[$i]->lastname }}</li>
-                    <li>{{ $patient[$i]->gender }}</li>
-                    <li>{{ $patient[$i]->contact }}</li>
-                </ul>
-            @endfor
             <div class="col-md-9" id="top">
                 <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
                     <fieldset style="align-content: center">
@@ -23,7 +13,7 @@
                             <label class="col-md-3 control-label">Patient ID</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-id-card-o fa-fw"></i></span>
                                     <input name="pid" value="{{ $patient[0]->pid }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
@@ -33,7 +23,7 @@
                             <label class="col-md-3 control-label" >First Name</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
                                     <input name="firstname" value="{{ $patient[0]->firstname }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
@@ -43,7 +33,7 @@
                             <label class="col-md-3 control-label" >Last Name</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
                                     <input name="lastname" value="{{ $patient[0]->lastname }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
@@ -53,7 +43,7 @@
                             <label class="col-md-3 control-label" >Gender</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-male fa-fw"></i></span>
                                     <input name="gender" value="{{ $patient[0]->gender }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
@@ -64,7 +54,7 @@
                             <label class="col-md-3 control-label" >Contact</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-mobile-phone fa-fw"></i></span>
                                     <input name="contact" value="{{ $patient[0]->contact }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
@@ -74,7 +64,7 @@
                             <label class="col-md-3 control-label" >Address</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-address-book-o fa-fw"></i></span>
                                     <input name="address" value="{{ $patient[0]->address }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
