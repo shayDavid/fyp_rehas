@@ -139,8 +139,6 @@
                             </div>
                         </div>
 
-                        <legend><h4 style="text-align: center;">Referral Information</h4></legend>
-
                         {{-- Form Name--}}
                         <hr>
                         <legend><h4 style="text-align: center;font-family: FontAwesome ">Referral Information</h4></legend>
@@ -201,7 +199,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary center-block">Accept</button>
+                        <div>
+                            <button type="submit" class="btn btn-primary center-block">Accept</button>
+                            <a href="{{ URL::route('referral_view') }}" class="btn btn-primary">Deny</a>
+                        </div>
                         <input type="hidden" name="_token" value="{{Session::token()}}">
                     </fieldset>
                 </form>
