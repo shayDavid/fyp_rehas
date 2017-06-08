@@ -73,12 +73,11 @@
                         </div>
                         <input type="hidden" name="middlename" value="{{ $patient[0]->middlename }}">
                         <input type="hidden" name="dob" value="{{ $patient[0]->dob }}">
-
+                        <hr>
                         <legend><h4 style="text-align: center;">Referral Information</h4></legend>
 
                         {{-- Form Name--}}
                         <hr>
-                        <legend><h4 style="text-align: center;font-family: FontAwesome ">Create Referral</h4></legend>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="diagnosis">Diagnosis</label>
                             <div class="col-md-6">
@@ -151,8 +150,9 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <select name="destination" class="form-control" id="referralHospitals" required>
-                                        <option value="muhimbili">Muhimbili</option>
-                                        <option value="mwananyamala">Mwananyamala</option>
+                                        @foreach($referralHospitals as $referralHos)
+                                            <option value="{{ $referralHos->name }}">{{ $referralHos->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

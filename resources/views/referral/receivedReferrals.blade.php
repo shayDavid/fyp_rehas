@@ -64,7 +64,7 @@
                                         <th>No</th>
                                         <th>Referral ID</th>
                                         <th>Patient Name</th>
-                                        <th>Referral Hospital</th>
+                                        <th>Non-referral Hospital</th>
                                         <th>Issued Date</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -76,7 +76,7 @@
                                             <th scope="row">{{ $i + 1 }}</th>
                                             <td>{{ $referrals[$i]->rid }}</td>
                                             <td>{{ $patientName[$i] }}</td>
-                                            <td>{{ $referrals[$i]->destination }}</td>
+                                            <td>{{ $referrals[$i]->source }}</td>
                                             <td>{{ $referrals[$i]->issuedate }}</td>
                                             <td>{{ $referrals[$i]->status }}</td>
                                             <td><a href="{{ URL::route('openReferral', $referrals[$i]->rid ) }}" class="btn btn-primary">View</a></td>

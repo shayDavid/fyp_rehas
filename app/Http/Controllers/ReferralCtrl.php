@@ -10,55 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use DB;
 
-class ReferralCtrl extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function getReferrals()
-    {
-            $referrals = Referral::all();
-            $patientName = array();
-            if(count($referrals) > 0) {
-                for ($i = 0; $i < count($referrals); $i++) {
-                    $patientID = $referrals[$i]->patientID;
-                    $patient = DB::table('patients')->where('pid', $patientID)->get();
-                    $patientName[$i] = $patient[0]->firstname . " " . $patient[0]->lastname;
-                }
-            }
+class ReferralCtrl extends Controller {
 
-            return view('non-referral.viewReferral', ['referrals' => $referrals, 'patientName' => $patientName]);
-    }
-
-
-    public function getReferralRp() {
-        $referrals = Referral::all();
-        $patientName = array();
-        if(count($referrals) > 0) {
-            for ($i = 0; $i < count($referrals); $i++) {
-                $patientID = $referrals[$i]->patientID;
-                $patient = DB::table('patients')->where('pid', $patientID)->get();
-                $patientName[$i] = $patient[0]->firstname . " " . $patient[0]->lastname;
-            }
-        }
-
-        return view('referral.receivedReferrals', ['referrals' => $referrals, 'patientName' => $patientName]);
-    }
-
-    public function openSingleReferral($rid) {
-        $singleReferral = DB::table('referrals')->where('rid', $rid)->get();
-        $patientID = $singleReferral[0]->patientID;
-        $patient = DB::table('patients')->where('pid', $patientID)->get();
-        return view('referral.openReferral', ['singleReferral' => $singleReferral, 'patient' => $patient]);
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
-     */
     public function store(Request $request) {
         //Doctor payload
         $doctorID = Auth::user()->loginID;
@@ -66,7 +19,6 @@ class ReferralCtrl extends Controller
 
         $doctorOb = new Doctor();
         $doctorExist = DB::table('doctors')->where('docid', $doctorID)->get();
-
 
         //Hospital payload
         $hospitalID = $doctorPayLoad[0]->hospitalID;
@@ -143,37 +95,54 @@ class ReferralCtrl extends Controller
         return view('non-referral.createReferralNull');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $rid
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($rid)
-    {
-        //
+    public function getReferrals() {
+        $doctorID = Auth::user()->loginID;
+        $doctorPayLoad = DB::table('h_i_s_doctors')->where('docid', $doctorID)->get();
+
+        $hospitalID = $doctorPayLoad[0]->hospitalID;
+        $hospitalPayLoad = DB::table('h_i_s_hospitals')->where('hid', $hospitalID)->get();
+
+        $hospitalName = $hospitalPayLoad[0]->name;
+        $referrals = DB::table('referrals')->where('source', $hospitalName)->get();
+        $patientName = array();
+        if(count($referrals) > 0) {
+            for ($i = 0; $i < count($referrals); $i++) {
+                $patientID = $referrals[$i]->patientID;
+                $patient = DB::table('patients')->where('pid', $patientID)->get();
+                $patientName[$i] = $patient[0]->firstname . " " . $patient[0]->lastname;
+            }
+        }
+
+        return view('non-referral.viewReferral', ['referrals' => $referrals, 'patientName' => $patientName]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $rid
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $rid)
-    {
-        //
+    public function getReferralRp() {
+        $doctorID = Auth::user()->loginID;
+        $doctorPayLoad = DB::table('h_i_s_doctors')->where('docid', $doctorID)->get();
+
+        $hospitalID = $doctorPayLoad[0]->hospitalID;
+        $hospitalPayLoad = DB::table('h_i_s_hospitals')->where('hid', $hospitalID)->get();
+
+        $hospitalName = $hospitalPayLoad[0]->name;
+        $referrals = DB::table('referrals')->where('destination', $hospitalName)->get();
+        $patientName = array();
+        if(count($referrals) > 0) {
+            for ($i = 0; $i < count($referrals); $i++) {
+                $patientID = $referrals[$i]->patientID;
+                $patient = DB::table('patients')->where('pid', $patientID)->get();
+                $patientName[$i] = $patient[0]->firstname . " " . $patient[0]->lastname;
+            }
+        }
+
+        return view('referral.receivedReferrals', ['referrals' => $referrals, 'patientName' => $patientName]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-
+    public function openSingleReferral($rid) {
+        $singleReferral = DB::table('referrals')->where('rid', $rid)->get();
+        $patientID = $singleReferral[0]->patientID;
+        $patient = DB::table('patients')->where('pid', $patientID)->get();
+        return view('referral.openReferral', ['singleReferral' => $singleReferral, 'patient' => $patient]);
     }
+
+
 }
