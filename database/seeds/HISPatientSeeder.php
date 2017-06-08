@@ -55,5 +55,16 @@ class HISPatientSeeder extends Seeder
         $patient->contact = "0764294587";
         $patient->address = "Masaki, Dar es Salaam";
         $patient->save();
+
+        $patient = new HISPatient();
+        $patient->pid = "UDP-0510-0201";
+        $patient->firstname = "Hamza";
+        $patient->middlename = "Suleman";
+        $patient->lastname = "Kayanza";
+        $patient->dob = "1992-03-13";
+        $patient->gender = "Male";
+        $patient->contact = "0567473282";
+        $patient->address = "Kimara, Dar es Salaam";
+        $patient->save();
     }
 }
