@@ -14,6 +14,6 @@ class Patient extends Model
     public $incrementing = false;
 
     public function referral() {
-        return $this->hasOne('App\Referral');
+        return $this->hasMany('App\Referral');
     }
 }

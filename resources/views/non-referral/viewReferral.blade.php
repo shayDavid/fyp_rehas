@@ -29,7 +29,7 @@
                                         <tr>
                                             <th scope="row">{{ $i + 1 }}</th>
                                             <td>{{ $referrals[$i]->rid }}</td>
-                                            <td>{{ $referrals[$i]->diagnosis }}</td>
+                                            <td>{{ $patientName[$i] }}</td>
                                             <td>{{ $referrals[$i]->destination }}</td>
                                             <td>{{ $referrals[$i]->issuedate }}</td>
                                             <td>{{ $referrals[$i]->status }}</td>
