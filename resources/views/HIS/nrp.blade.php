@@ -52,7 +52,7 @@
                 <nav class="nav navbar-primary">
                     <div class="container-fluid">
                         <ul class="nav nav-justified" style="font-family: FontAwesome">
-                            <li><a href="{{route('nrp')}}">Dashboard</a></li>
+                            <li><a href="{{route('nrp')}}">Home</a></li>
                             <li><a href="#{{--{{route('')}}--}}">Outpatients</a></li>
                             <li><a href="{{route('home')}}">eReferral</a></li>
                             <li><a href="#">Services</a></li>
@@ -72,6 +72,7 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <h3 class="text-right">{{''}}</h3>
                             <hr>
                             <div style="padding-top: 12px">
                                 <p><strong>Guidelines</strong></p>
@@ -91,8 +92,7 @@
                                 </p>
 
                             </div>
-                            {{--You are successful logged in to Non-Referral Hospital
-                            <br>--}}
+
 
                         </div>
                     </div>
