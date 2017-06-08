@@ -78,3 +78,6 @@
     </div>
     <br>
 @endsection
+@section('footer')
+
+    @endsection
