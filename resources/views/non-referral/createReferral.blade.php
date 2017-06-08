@@ -3,10 +3,19 @@
     <div class="container-fluid">
         <div class="row">
             @include('includes.headerSessions')
+<<<<<<< HEAD
+            @for($i = 0; $i < count($patient); $i++)
+                <ul>
+                    <li>{{ $patient[$i]->pid }}</li>
+                    <li>{{ $patient[$i]->firstname }}</li>
+                    <li>{{ $patient[$i]->lastname }}</li>
+                    <li>{{ $patient[$i]->gender }}</li>
+                    <li>{{ $patient[$i]->contact }}</li>
+                </ul>
+            @endfor
             <div class="col-md-9" id="top">
                 <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
                     <fieldset style="align-content: center">
-                        {{-- Form Name--}}
                         <legend><h2 style="text-align: center;">Create Referral</h2></legend>
                         <legend><h4 style="text-align: center;">Patient Demographic Information</h4></legend>
 
@@ -51,6 +60,7 @@
                         </div>
 
                         <div class="form-group">
+
                             <label class="col-md-3 control-label" >Contact</label>
                             <div class="col-md-6">
                                 <div class="input-group">
@@ -73,6 +83,10 @@
                         <input type="hidden" name="dob" value="{{ $patient[0]->dob }}">
 
                         <legend><h4 style="text-align: center;">Referral Information</h4></legend>
+
+                        {{-- Form Name--}}
+                        <hr>
+                        <legend><h4 style="text-align: center;font-family: FontAwesome ">Create Referral</h4></legend>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="diagnosis">Diagnosis</label>
                             <div class="col-md-6">

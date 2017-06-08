@@ -42,7 +42,7 @@
     <div class="container">
         <div class="row">
             <div class="leftbar col-md-3" id="sidebar">
-                <ul>
+                <ul class="leftbar nav nav-pills nav-stacked">
                     @include('includes.sidebarRp')
                 </ul>
             </div>
