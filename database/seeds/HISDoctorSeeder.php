@@ -63,5 +63,31 @@ class HISDoctorSeeder extends Seeder
         $doctor->specialization = "Cardiovascular Surgeon";
         $doctor->hospitalID = "MUH-0391-0020";
         $doctor->save();
+
+        $doctor = new HISDoctor();
+        $doctor->docid = "MUD-0510-0200";
+        $doctor->firstname = "James";
+        $doctor->middlename = "Nemesy";
+        $doctor->lastname = "Daniel";
+        $doctor->dob = "1994-07-13";
+        $doctor->gender = "Male";
+        $doctor->contact = "0718230587";
+        $doctor->address = "Kigamboni, Dar es Salaam";
+        $doctor->specialization = "Cardiovascular Surgeon";
+        $doctor->hospitalID = "MUH-0391-0020";
+        $doctor->save();
+
+        $doctor = new HISDoctor();
+        $doctor->docid = "KAD-0510-0200";
+        $doctor->firstname = "John";
+        $doctor->middlename = "Nemesy";
+        $doctor->lastname = "Doe";
+        $doctor->dob = "1994-07-19";
+        $doctor->gender = "Male";
+        $doctor->contact = "0715230587";
+        $doctor->address = "Kigamboni, Dar es Salaam";
+        $doctor->specialization = "Cardiovascular Surgeon";
+        $doctor->hospitalID = "KAH-0391-0200";
+        $doctor->save();
     }
 }

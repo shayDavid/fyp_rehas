@@ -35,5 +35,13 @@ class HISHospitalSeeder extends Seeder
         $hospital->ownership = "Public";
         $hospital->type = "Referral";
         $hospital->save();
+
+        $hospital = new HISHospital();
+        $hospital->hid = "KAH-0391-0200";
+        $hospital->name = "Kairuki Hospital";
+        $hospital->address = "Kinondoni, Dar es Salaam";
+        $hospital->ownership = "Private";
+        $hospital->type = "Referral";
+        $hospital->save();
     }
 }
