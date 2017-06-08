@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/masterNrp.css')}}">
     @yield('styles')
 </head>
-<body>
+<body style="min-height: 658px">
     @yield('header')
     @yield('main')
     <script src="{{URL::to('js/bootstrap/jquery-3.2.1.min.js')}}"></script>

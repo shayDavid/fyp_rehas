@@ -27,12 +27,12 @@
                         <i class="fa fa-user fa-fw fa-2x"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;User Profile</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{{ route('hisLogout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{{ route('hisLogout') }}"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -68,6 +68,25 @@
                     </tbody>
                 </table>
                 <hr>
+                <div style="padding-top: 12px">
+                    <p>Welcome to the Health Information System for Referral Hospitals</p>
+                    <hr>
+                    <p><strong>Guidelines</strong></p><hr>
+                    <p>Among many functions of HIS, Dealing with referred patients is one of them</p>
+
+                    <strong>View Referral</strong>
+                    <hr>
+                    <p>This functionality allows a doctor, here referred as "Referral Practitioner" to
+                    <ul>
+                        <li class="info">View all referral received from different hospitals</li><hr>
+                        <li class="info">Review referral reasons, diagnosis and recommendations</li><hr>
+                        <li class="info">Deciding on whether to accept or deny the referral</li><hr>
+                        <li class="info">If Doctor accept a referral, Appointment should be put in place and updating the status of the referral</li><hr>
+                        <li class="info">Else if, Referral is denied, Doctor will be redirected back to view page</li><hr>
+                    </ul>
+                    </p>
+
+                </div>
             </div>
         </div>
     </div>
