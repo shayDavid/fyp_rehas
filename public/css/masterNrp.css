@@ -12,6 +12,10 @@ body {
     color: #FFFFFF;
 }
 
+/*#modal_accept {
+    align-content: center;
+}*/
+
 .sidebar .sidebar-nav.navbar-collapse {
     padding-left: 0;
     padding-right: 0;
