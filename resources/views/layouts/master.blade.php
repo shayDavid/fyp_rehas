@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{{URL::to('css/styles.css')}}">
     @yield('styles')
 </head>
-<body>
+<body style="min-height: 658px">
     @include('includes.header')
     <div>@yield('content')</div>
     @include('includes.footer')
