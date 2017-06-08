@@ -50,23 +50,24 @@
                     <div class="container-fluid">
 
                         <ul class="nav nav-pills nav-stacked" style="font-family: FontAwesome">
-                            <li><a href="{{route('rp')}}" style="color: #FFFFFF;"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a></li><br/>
-                            <li><a href="#{{--{{route('')}}--}}" style="color: #FFFFFF;"><i class="fa fa-user-circle-o fa-fw"></i>Outpatients</a><br/>
-                            <li><a href="{{route('dashboard')}}" style="color: #FFFFFF;"><i class="fa fa-file-archive-o fa-fw"></i>eReferral</a></li><br/>
-                            <li><a href="#" style="color: #FFFFFF;"><i class="fa fa-safari fa-fw"></i>Services</a></li><br/>
-                            <li><a href="#" style="color: #FFFFFF;"><i class="fa fa-gear fa-fw"></i>Settings</a></li><br/>
+                            <li><a href="{{route('rp')}}" style="color: #FFFFFF;"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a></li><br/>
+                            <li><a href="#{{--{{route('')}}--}}" style="color: #FFFFFF;"><i class="fa fa-user-circle-o fa-fw"></i>&nbsp;Outpatients</a><br/>
+                            <li><a href="{{route('dashboard')}}" style="color: #FFFFFF;"><i class="fa fa-file-archive-o fa-fw"></i>&nbsp;eReferral</a></li><br/>
+                            <li><a href="#" style="color: #FFFFFF;"><i class="fa fa-safari fa-fw"></i>&nbsp;Services</a></li><br/>
+                            <li><a href="#" style="color: #FFFFFF;"><i class="fa fa-cog fa-fw"></i>&nbsp;Settings</a></li><br/>
                         </ul>
                     </div>
                 </nav>
             </section>
             <div class="col-md-9">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title-bg" style="text-align: center;
-                                     font-family: FontAwesome">Referral Hospital Information System </h3>
-                    </div>
-                    <div class="panel-body"></div>
-                </div>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="info"><strong>Welcome, {{ Session::get('doctorName') }}</strong></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
             </div>
         </div>
     </div>
