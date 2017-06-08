@@ -3,7 +3,6 @@
     <div class="container-fluid">
         <div class="row">
             @include('includes.headerSessions')
-
             @for($i = 0; $i < count($patient); $i++)
                 <ul>
                     <li>{{ $patient[$i]->pid }}</li>
@@ -13,13 +12,65 @@
                     <li>{{ $patient[$i]->contact }}</li>
                 </ul>
             @endfor
-
             <div class="col-md-9" id="top">
                 <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
                     <fieldset style="align-content: center">
-                        {{-- Form Name--}}
-                        <legend><h2 style="text-align: center;">Create Referral</h2></legend>
+                       {{-- <legend><h3 style="text-align: center; font-family: FontAwesome;">Patient Demographics</h3></legend>
+                        @for($i = 0; $i < count($patient); $i++)
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="patient_id">Patient ID:</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-id-card-o"></i></span>
+                                    <input name="patient_id" type="text" class="form-control"  value="{{ $patient[$i]->pid }}" type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="first_name">First Name:</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                    <input name="first_name" type="text" class="form-control"  value="{{ $patient[$i]->firstname }}" type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="last_name">Last Name:</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                    <input name="last_name" type="text" class="form-control"  value="{{ $patient[$i]->lastname }}" type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="gender">Gender:</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-male fa-fw"></i></span>
+                                    <input name="gender" type="text" class="form-control"  value="{{ $patient[$i]->gender }}" type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="contact">Contact:</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-mobile-phone fa-fw"></i></span>
+                                    <input name="contact" type="tel" class="form-control"  value="{{ $patient[$i]->contact }}" type="text" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        @endfor--}}
+
+                        {{-- Form Name--}}
+                        <hr>
+                        <legend><h4 style="text-align: center;font-family: FontAwesome ">Create Referral</h4></legend>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="diagnosis">Diagnosis</label>
                             <div class="col-md-6">
