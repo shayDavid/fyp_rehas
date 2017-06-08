@@ -68,7 +68,7 @@
                             <table class="table">
                                 <tbody>
                                 <tr>
-                                    <td class="success"><strong>Welcome, DR. Kapis </strong></td>
+                                    <td class="success"><strong>Welcome, {{ Session::get('doctorName') }}</strong></td>
                                 </tr>
                                 </tbody>
                             </table>
