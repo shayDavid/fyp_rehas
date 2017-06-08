@@ -15,7 +15,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="pid" value="{{ $patient[0]->pid }}" class="form-control"  type="text" disabled>
+                                    <input name="pid" value="{{ $patient[0]->pid }}" class="form-control"  type="text" readonly>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="firstname" value="{{ $patient[0]->firstname }}" class="form-control"  type="text" disabled>
+                                    <input name="firstname" value="{{ $patient[0]->firstname }}" class="form-control"  type="text" readonly>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="lastname" value="{{ $patient[0]->lastname }}" class="form-control"  type="text" disabled>
+                                    <input name="lastname" value="{{ $patient[0]->lastname }}" class="form-control"  type="text" readonly>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="gender" value="{{ $patient[0]->gender }}" class="form-control"  type="text" disabled>
+                                    <input name="gender" value="{{ $patient[0]->gender }}" class="form-control"  type="text" readonly>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="contact" value="{{ $patient[0]->contact }}" class="form-control"  type="text" disabled>
+                                    <input name="contact" value="{{ $patient[0]->contact }}" class="form-control"  type="text" readonly>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="address" value="{{ $patient[0]->address }}" class="form-control"  type="text" disabled>
+                                    <input name="address" value="{{ $patient[0]->address }}" class="form-control"  type="text" readonly>
                                 </div>
                             </div>
                         </div>
