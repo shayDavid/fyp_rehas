@@ -65,16 +65,18 @@
                 <div class="container-fluid" >
                     <div class="row">
                         <div class="col-md-9 col-md-offset-2">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title-bg" style="text-align: center;
-                                     font-family: FontAwesome">Non-Referral Hospital Information System </h3>
-                                </div>
-                                <div class="panel-body">
-                                    <p class="article-header">Demo System for Non-Referral Practitioners</p>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="success"><strong>Welcome, DR. Kapis </strong></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <br>
+                            {{--You are successful logged in to Non-Referral Hospital
+                            <br>--}}
 
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
