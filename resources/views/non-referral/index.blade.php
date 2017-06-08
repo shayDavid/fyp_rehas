@@ -11,20 +11,23 @@
             <div class="content container">
                 <div class="row">
                     <section class="col-md-9" id="top" >
-                        <div class="panel panel-default">
+                        <div style="padding-top: 12px">
+                            <p><strong>Guidelines</strong></p>
+                            <p>You can access ReHAS functionalities by following appropriate links as follows</p>
+                            <hr>
 
-                            <div class="panel-heading" style="text-align: center">
-                                <h1 class="panel-title">Welcome to Referral Hospital Appointment System</h1>
-                            </div>
+                            <strong>View Referral</strong>
+                            <hr>
+                            <p>This functionality allows a doctor, here referred as "Referral Practitioner" to
+                            <ul>
+                                <li class="info">View all referral received from different hospitals</li><hr>
+                                <li class="info">Review referral reasons, diagnosis and recommendations</li><hr>
+                                <li class="info">Deciding on whether to accept or deny the referral</li><hr>
+                                <li class="info">If Doctor accept a referral, Appointment should be put in place and updating the status of the referral</li><hr>
+                                <li class="info">Else if, Referral is denied, Doctor will be redirected back to view page</li><hr>
+                            </ul>
+                            </p>
 
-                            <div class="panel-body">
-                                <ul>
-                                    <p>Referral Hospital Appointment System issues referral appointents to patients from Non- referral hospitals to Referral hospitals.</p>
-                                    <li id="inLine"><p>The doctor fill the referral form from the 'eReferrals'.</p></li>
-                                    <li id="inLine"><p>The referral status will be viewed in the 'view referrals'.</p></li>
-                                    <li id="inLine"><p>Doctor can generate report whenever necessary.</p></li>
-                                </ul>
-                            </div>
                         </div>
                     </section>
                 </div>

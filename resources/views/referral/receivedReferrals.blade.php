@@ -79,5 +79,7 @@
     <br>
 @endsection
 @section('footer')
-
-    @endsection
+    <footer style="background-color: #36A172;">
+        <h3 style="text-align: center; font-size: medium;">Copyright &copy; 2017 Referral Hospital. All rights reserved.</h3>
+    </footer>
+@endsection
