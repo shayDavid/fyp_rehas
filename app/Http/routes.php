@@ -66,10 +66,6 @@ Route::group(['middleware' => ['auth']] , function(){
         return view('referral.receivedReferrals');
     })->name('received');
 
-    Route::get('/referral/open', function (){
-        return view('referral.openReferral');
-    })->name('view');
-
     Route::get('/HIS/nrp', function (){
         return view('HIS.nrp');
     })->name('nrp');
