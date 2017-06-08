@@ -24,11 +24,19 @@ class LoginCtrl extends Controller
             $title = DB::table('h_i_slogins')->where('loginID', $request['username'])->value('title');
             $doctor = DB::table('h_i_s_doctors')->where('docid', $request['username'])->get();
             $doctorName = $doctor[0]->firstname." ".$doctor[0]->lastname;
+
+            $hospitalID = $doctor[0]->hospitalID;
+            $hospital = DB::table('h_i_s_hospitals')->where('hid', $hospitalID)->get();
+
+            $hospitalName = $hospital[0]->name;
+
             if($title == "NRP") {
                 $request->session()->put('doctorName', $doctorName);
+                $request->session()->put('hospitalName', $hospitalName);
                 return redirect()->route('hisNrpHome');
             } else {
                 $request->session()->put('doctorName', $doctorName);
+                $request->session()->put('hospitalName', $hospitalName);
                 return redirect()->route('hisRpHome');
             }
         }

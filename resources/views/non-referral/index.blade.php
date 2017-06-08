@@ -14,6 +14,7 @@
                         <div style="padding-top: 12px">
                             <p><strong>Guidelines</strong></p>
                             <p>You can access ReHAS functionalities by following appropriate links as follows</p>
+                            <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3>
                             <hr>
 
                             <strong>Create Referral</strong>
@@ -21,12 +22,17 @@
                             <p>This functionality allows a doctor, here referred as "Non-Referral Practitioner" to
                             <ul>
                                 <li class="info">Search patient by using patient identity as registered in HIS</li><hr>
-                                <li class="info">If patient is registered, System display referral form</li><hr>
-                                <li class="info">Deciding on whether to accept or deny the referral</li><hr>
-                                <li class="info">If Doctor accept a referral, Appointment should be put in place and updating the status of the referral</li><hr>
-                                <li class="info">Else if, Referral is denied, Doctor will be redirected back to view page</li><hr>
+                                <li class="info">If patient is registered, System displays referral form to be filled</li><hr>
+                                <li class="info">After filling all required fields Doctor creates referral, System acknowledges successful referrals</li><hr>
+                                <li class="info">Else if, patient is not registered, System display an error message</li>
                             </ul>
                             </p>
+                            <hr>
+                            <strong>View Referral</strong><hr>
+                            <p>
+                            <ul><li class="info">This functionality allows Doctor to view all created referrals details</li><hr></ul>
+                            </p>
+
 
                         </div>
                     </section>
