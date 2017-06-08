@@ -11,10 +11,10 @@
             <div class="content container">
                 <div class="row">
                     <section class="col-md-9" id="top" >
+                        <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                         <div style="padding-top: 12px">
                             <p><strong>Guidelines</strong></p>
                             <p>You can access ReHAS functionalities by following appropriate links as follows</p>
-                            <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3>
                             <hr>
 
                             <strong>Create Referral</strong>

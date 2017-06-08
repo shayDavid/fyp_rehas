@@ -4,9 +4,9 @@
         <div class="row">
             @include('includes.headerSessions')
             <div class="col-md-9" id="top">
+                <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                 <form id="referral_form" class="well form-horizontal" method="post" action="{{ route('create_referral') }}">
                     <fieldset style="align-content: center">
-                        <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                         <legend><h2 style="text-align: center;">Create Referral</h2></legend>
                         <legend><h4 style="text-align: center;">Patient Demographic Information</h4></legend>
 

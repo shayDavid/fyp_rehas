@@ -50,9 +50,9 @@
             </div>
             <div id="top" class="col-md-9">
                 {{-- View attributes of the referral status and available referals here--}}
+                <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                 <form class="well form-horizontal">
                     <fieldset>
-                        <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
                         <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
                         @if(count($referrals)> 0)
                             <div>
