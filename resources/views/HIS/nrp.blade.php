@@ -68,7 +68,7 @@
                             <table class="table">
                                 <tbody>
                                 <tr>
-                                    <td class="success"><strong>Welcome, {{ Session::get('doctorName') }}</strong></td>
+                                    <td class="success"><strong>Welcome, Dr.&nbsp; {{ Session::get('doctorName') }}</strong></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -76,18 +76,17 @@
                             <hr>
                             <div style="padding-top: 12px">
                                 <p><strong>Guidelines</strong></p>
-                                <p>You can access ReHAS functionalities by following appropriate links as follows</p>
+                                <p>You are successful login to Non-Referral HIS</p>
+                                <hr>
+                                <p>You can start to process referral by just clicking "<strong>eReferral</strong>"&nbsp;link above</p>
                                 <hr>
 
-                                <strong>View Referral</strong>
+                                <strong>eReferral</strong>
                                 <hr>
-                                <p>This functionality allows a doctor, here referred as "Referral Practitioner" to
+                                <p>This link redirects a doctor, here referred as "Referral Practitioner" to
                                 <ul>
-                                    <li class="info">View all referral received from different hospitals</li><hr>
-                                    <li class="info">Review referral reasons, diagnosis and recommendations</li><hr>
-                                    <li class="info">Deciding on whether to accept or deny the referral</li><hr>
-                                    <li class="info">If Doctor accept a referral, Appointment should be put in place and updating the status of the referral</li><hr>
-                                    <li class="info">Else if, Referral is denied, Doctor will be redirected back to view page</li><hr>
+                                    <li class="info">eReferral module where you can create referrals and send them to appropriate referral Hospital</li><hr>
+                                    <li class="info">View all referrals created before and their status.</li><hr>
                                 </ul>
                                 </p>
 
