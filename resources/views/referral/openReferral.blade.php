@@ -202,37 +202,38 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{{ URL::route('referral_view') }}" class="btn btn-primary">Deny</a>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3 col-md-offset-3">
-                                    <div id="modal_accept">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                data-target="#acceptModal">Accept</button>
+                        {{--<a href="{{ URL::route('referral_view') }}" class="btn btn-warning">Deny</a>--}}
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-3">
+                                        <div id="modal_accept">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#acceptModal">Accept</button>
 
-                                        <div id="acceptModal" class="modal fade" role="dialog">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title" style="text-align: center">Set Appointment</h4>
-                                                    </div>
+                                            <div id="acceptModal" class="modal fade" role="dialog">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title" style="text-align: center">Set Appointment</h4>
+                                                        </div>
 
-                                                    <div class="modal-body">
-                                                        <div class="form-group">
-                                                            <label class="col-md-3 control-label">Date</label>
-                                                            <div class="col-md-6">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
-                                                                    <input name="date"  class="form-control"  type="date" required>
+                                                        <div class="modal-body">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label">Date</label>
+                                                                <div class="col-md-6">
+                                                                    <div class="input-group">
+                                                                        <span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
+                                                                        <input name="date"  class="form-control"  type="date" required>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="modal-footer">
-                                                        <button type="submit" class="btn btn-primary">Set</button>
-                                                        <input type="hidden" name="_token" value="{{Session::token()}}">
+                                                        <div class="modal-footer">
+                                                            <button type="submit" class="btn btn-primary">Set</button>
+                                                            <input type="hidden" name="_token" value="{{Session::token()}}">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -240,7 +241,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class=" col-md-3 col-md-offset-4">
+                                <a href="{{ URL::route('referral_view') }}" class="btn btn-warning">Deny</a>
+                            </div>
                     </fieldset>
                 </form>
             </div>

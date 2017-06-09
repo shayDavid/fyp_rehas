@@ -55,6 +55,20 @@
                     <fieldset>
                         <legend><h2 style="text-align: center;">Received Referrals</h2></legend>
                         @if(count($referrals)> 0)
+                            @if(Session::has('fail'))
+                                <div class="alert alert-danger">
+                                    @if(Session::has('fail'))
+                                        {{ Session::get('fail') }}
+                                    @endif
+                                </div>
+                            @endif
+                            @if(Session::has('success'))
+                                <div class="alert alert-success">
+                                    @if(Session::has('success'))
+                                        {{ Session::get('success') }}
+                                    @endif
+                                </div>
+                            @endif
                             <div>
                                 {{-- this table data can be fetched from a controller as an array of data--}}
                                 <table id="viewReferral" class="table table-responsive table-hover"
