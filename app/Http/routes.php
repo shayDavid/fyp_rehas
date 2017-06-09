@@ -67,6 +67,11 @@ Route::group(['middleware' => ['auth']] , function(){
         'as' => 'referral_view'
     ]);
 
+    Route::post('/rp/set_appointment', [
+        'uses' => 'SetAppointmentCtrl@setAppointment',
+        'as' => 'setAppointment'
+    ]);
+
     Route::get('/referral/open/{rid}', [
         'uses' => 'ReferralCtrl@openSingleReferral',
         'as' => 'openReferral'

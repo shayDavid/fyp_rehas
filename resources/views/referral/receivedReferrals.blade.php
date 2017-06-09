@@ -65,7 +65,7 @@
                                         <th>No</th>
                                         <th>Referral ID</th>
                                         <th>Patient Name</th>
-                                        <th>Non-referral Hospital</th>
+                                        <th>Source(Hospital)</th>
                                         <th>Issued Date</th>
                                         <th>Status</th>
                                         <th>Action</th>

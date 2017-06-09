@@ -21,7 +21,7 @@
                                             <th>No</th>
                                             <th>Referral ID</th>
                                             <th>Patient Name</th>
-                                            <th>Referral Hospital</th>
+                                            <th>Destination(Hospital)</th>
                                             <th>Issued Date</th>
                                             <th>Status</th>
                                         </tr>

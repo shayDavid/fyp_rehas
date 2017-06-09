@@ -51,7 +51,7 @@
             <div id="top" class="col-md-9">
                 {{-- View attributes of the referral status and available referals here--}}
                 <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3><hr>
-                <form class="well form-horizontal">
+                <form class="well form-horizontal" method="post" action="{{ route('setAppointment') }}">
                     <fieldset style="align-content: center">
                         <legend><h2 style="text-align: center;">Referral Details</h2></legend>
                         <legend><h4 style="text-align: center;">Patient Demographic Information</h4></legend>
@@ -61,7 +61,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-id-card-o fa-fw"></i></span>
-                                    <input name="pid" value="{{ $patient[0]->pid }}" class="form-control"  type="text" readonly>
+                                    <input name="pid" value="{{ $patient[0]->pid }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                    <input name="firstname" value="{{ $patient[0]->firstname }}" class="form-control"  type="text" readonly>
+                                    <input name="firstname" value="{{ $patient[0]->firstname }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                    <input name="middlename" value="{{ $patient[0]->middlename }}" class="form-control"  type="text" readonly>
+                                    <input name="middlename" value="{{ $patient[0]->middlename }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                    <input name="lastname" value="{{ $patient[0]->lastname }}" class="form-control"  type="text" readonly>
+                                    <input name="lastname" value="{{ $patient[0]->lastname }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-male fa-fw"></i></span>
-                                    <input name="gender" value="{{ $patient[0]->gender }}" class="form-control"  type="text" readonly>
+                                    <input name="gender" value="{{ $patient[0]->gender }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                                 <div class="input-group">
 
                                     <span class="input-group-addon"><i class="fa fa-mobile-phone fa-fw"></i></span>
-                                    <input name="contact" value="{{ $patient[0]->contact }}" class="form-control"  type="text" readonly>
+                                    <input name="contact" value="{{ $patient[0]->contact }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                                 <div class="input-group">
 
                                     <span class="input-group-addon"><i class="fa fa-address-book-o fa-fw"></i></span>
-                                    <input name="address" value="{{ $patient[0]->address }}" class="form-control"  type="text" readonly>
+                                    <input name="address" value="{{ $patient[0]->address }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                 <div class="input-group">
 
                                     <span class="input-group-addon"><i class="fa fa-address-book-o fa-fw"></i></span>
-                                    <input name="dob" value="{{ $patient[0]->dob }}" class="form-control"  type="text" readonly>
+                                    <input name="dob" value="{{ $patient[0]->dob }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -148,17 +148,19 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-heartbeat"></i></span>
-                                    <input name="diagnosis" value="{{ $singleReferral[0]->diagnosis }}"  class="form-control"  type="text" readonly>
+                                    <input name="diagnosis" value="{{ $singleReferral[0]->diagnosis }}"  class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
+
+                        <input type="hidden" value="{{ $singleReferral[0]->rid }}" name="rid">
 
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="date">Issue date</label>
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="date" value="{{ $singleReferral[0]->issuedate }}" class="form-control"  type="date" readonly>
+                                    <input name="date" value="{{ $singleReferral[0]->issuedate }}" class="form-control"  type="date" disabled>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +170,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
-                                    <input name="treatment_given" value="{{ $singleReferral[0]->treatmentGiven }}" class="form-control"  type="text" readonly>
+                                    <input name="treatment_given" value="{{ $singleReferral[0]->treatmentGiven }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +180,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
-                                    <input name="treatment_recommended" value="{{ $singleReferral[0]->treatmentRecommended }}" class="form-control"  type="text" readonly>
+                                    <input name="treatment_recommended" value="{{ $singleReferral[0]->treatmentRecommended }}" class="form-control"  type="text" disabled>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +189,7 @@
                             <label class="col-md-3 control-label" for="reason">Reason</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <textarea name="reason" class="form-control" rows="3" cols="50" placeholder="{{ $singleReferral[0]->referralreason }}" readonly></textarea>
+                                    <textarea name="reason" class="form-control" rows="3" cols="50" placeholder="{{ $singleReferral[0]->referralreason }}" disabled></textarea>
                                 </div>
                             </div>
                         </div>
@@ -196,10 +198,11 @@
                             <label class="col-md-3 control-label" for="investigation">Investigation</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <textarea name="investigation" class="form-control" rows="4" cols="50" placeholder="{{ $singleReferral[0]->investigation }}" readonly></textarea>
+                                    <textarea name="investigation" class="form-control" rows="4" cols="50" placeholder="{{ $singleReferral[0]->investigation }}" disabled></textarea>
                                 </div>
                             </div>
                         </div>
+                        <a href="{{ URL::route('referral_view') }}" class="btn btn-primary">Deny</a>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-3 col-md-offset-3">
@@ -212,7 +215,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title">Setting Appointment</h4>
+                                                        <h4 class="modal-title" style="text-align: center">Set Appointment</h4>
                                                     </div>
 
                                                     <div class="modal-body">
@@ -229,12 +232,11 @@
 
                                                     <div class="modal-footer">
                                                         <button type="submit" class="btn btn-primary">Set</button>
+                                                        <input type="hidden" name="_token" value="{{Session::token()}}">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="{{ URL::route('referral_view') }}" class="btn btn-primary">Deny</a>
-                                        <input type="hidden" name="_token" value="{{Session::token()}}">
                                     </div>
                                 </div>
                             </div>
