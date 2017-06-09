@@ -72,7 +72,7 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <h3 class="text-right">{{ Session::get('hospitalName') }}</h3>
+                            <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3>
                             <hr>
                             <div style="padding-top: 12px">
                                 <p><strong>Guidelines</strong></p>

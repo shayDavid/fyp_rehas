@@ -67,6 +67,7 @@
                     </tr>
                     </tbody>
                 </table>
+                <h3 class="text-right small text-letterspacing">{{Session::get('hospitalName')}}</h3>
                 <hr>
                 <div style="padding-top: 12px">
                     <p>Welcome to the Health Information System for Referral Hospitals</p>
