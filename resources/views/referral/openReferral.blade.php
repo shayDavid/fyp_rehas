@@ -206,8 +206,9 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-3 col-md-offset-3">
-                                        <div class="btn-group">
+                                        <div class="">
                                             <div id="modal_accept">
+                                                <a href="{{ URL::route('referral_view') }}" class="btn btn-warning" role="button">Deny</a>
                                                 <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#acceptModal">Accept</button>
                                                 <div id="acceptModal" class="modal fade" role="dialog">
@@ -238,11 +239,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{{ URL::route('referral_view') }}" class="btn btn-warning">Deny</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            {{--<a href="{{ URL::route('referral_view') }}" class="btn btn-warning">Deny</a>--}}
                             <div class="col-md-3 col-md-offset-4" style="clear: both;  ">
 
                             </div>
